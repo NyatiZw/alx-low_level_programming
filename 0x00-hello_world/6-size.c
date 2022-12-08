@@ -10,10 +10,15 @@
 
 int main(void)
 {
-	printf("Size of a : "\n, char);
-	printf("Size of an : "\n, int);
-	printf("Size of a : "\n, long int);
-	printf("Size of a: "\n, float);
-}
+	char c;
+	int i;
+	long int d;
+	float f;
 
-return (0);
+	printf("Size of a charecter is: %lu.\n", (char)sizeof(c));
+	printf("Size of an interger is: %lu.\n", (int)sizeof(i));
+	printf("Size of a long interger is: %lu.\n", (long int)sizeof(d));
+	printf("Size of a float is : %lu.\n", (float)sizeof(f));
+
+	return (0);
+}
