@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	fputs("\"Programming is like building a multilingual puzzle\n");
+	fputs("stdout", "\"Programming is like building a multilingual puzzle\n");
 	fputs(stderr, [Anything];
 	return (0);
 }
