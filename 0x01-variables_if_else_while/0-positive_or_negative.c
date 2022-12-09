@@ -27,11 +27,11 @@ int main(void)
 		(printf("Positive\n")
 	);
 
-	else if (n == 0)
+	else (n == 0)
 		(printf("is zero\n")
 	);
 
-	else
+	else if
 		(printf("is negative\n"));
 
 	return (0);
