@@ -11,8 +11,8 @@
 int main(void)
 {
 
-	fputs("\"Programming is like building a multilingual puzzle\n", stdout);
-	fputs("%s\n", stderr);
+	puts("\"Programming is like building a multilingual puzzle\n", stdout);
+	puts("%s\n", stderr);
 
 	return (0);
 }
