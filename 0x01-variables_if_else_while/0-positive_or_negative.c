@@ -5,12 +5,10 @@
 /* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there*/
-
 /**
  * main - Entry point
  *
- * Description: 'using if function'
+ * Description: 'c programming variables'
  *
  * Return Always 0 (Success)
  */
