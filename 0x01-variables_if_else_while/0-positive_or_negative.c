@@ -27,7 +27,7 @@ int main(void)
 		(printf("Positive\n"));
 	}
 
-	else (n == 0) {
+	else (n == 0); {
 		(printf("is zero\n"));
 	}
 
