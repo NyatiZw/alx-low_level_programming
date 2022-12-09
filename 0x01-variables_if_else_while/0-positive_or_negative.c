@@ -23,13 +23,13 @@ int main(void)
 
 	/* your code goes there */
 
-	if (n > 0)
-		(printf("Positive\n")
-	);
+	if (n > 0) {
+		(printf("Positive\n"));
+	}
 
-	else (n == 0)
-		(printf("is zero\n")
-	);
+	else (n == 0) {
+		(printf("is zero\n"));
+	}
 
 	else if
 		(printf("is negative\n"));
