@@ -24,16 +24,17 @@ int main(void)
 					
 					printf("The exact value of n is: %d\n", n);
 
-					if(n > 0){
+					if(n >= 0){
 						printf("The number %d is positive\n", n);
 				       	};
 
-					else(n == 0){
+					else if (n == 0){
 						printf("This number is zero\n");
+					};
 
-					else if(n < 0){
+					else (n < 0){
 						printf("This number is negative\n");
-
+					};
+					
 					return (0);
-
 }
