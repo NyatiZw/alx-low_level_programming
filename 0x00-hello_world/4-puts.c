@@ -12,7 +12,7 @@ int main(void)
 {
 
 	puts("\"Programming is like building a multilingual puzzle\n", stdout);
-	puts("%s\n", stderr);
+	puts(stderr\n);
 
 	return (0);
 }
