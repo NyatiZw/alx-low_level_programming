@@ -12,7 +12,6 @@ int main(void)
 {
 
 	puts("\"Programming is like building a multilingual puzzle\n", stdout);
-	puts(stderr\n);
 
 	return (0);
 }
