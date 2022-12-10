@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /*
- * Main - If statement
+ * Main - Initiating Betty
  *
  * Description:'Main'
  *
