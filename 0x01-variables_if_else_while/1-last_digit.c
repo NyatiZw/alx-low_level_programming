@@ -5,7 +5,7 @@
 /*
  * Main - Entry point
  *
- * Description: 'print last digit of number'
+ * Description:- 'If Statement task'
  *
  * Return: Always 0 (Success)
  *
@@ -13,14 +13,16 @@
 
 int main(void)
 {
-	int n, last_digit;
+	int n;
+	int ld;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
 /* your code goes there */
-	last_digit = n % 10;
-	printf("Last digit of, d%, is: c%\n" n last_digit);
+	ld = n % 10;
+	printf("The random number is %d\n", n);
+	printf("The last digit of that number is %d\n", ld);
 
 return (0);
 }
