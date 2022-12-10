@@ -1,5 +1,6 @@
 # include <stdio.h>
 # include <ctype.h>
+# include <string.h>
 
 /**
  * main - Entry Point
@@ -12,14 +13,13 @@
 
 int main(void)
 {
-	int x = 'A';
+	int ch;
 
-	while (x <= 'Z')
-	{
-		putchar(tolower(x)), putchar(x);
-		x++;
-	}
-		putchar('\n');
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
+	putchar('\n');
 
 	return (0);
 }
