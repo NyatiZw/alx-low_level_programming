@@ -1,8 +1,5 @@
 #include <stdlib.h>
-
 #include <time.h>
-
-/* more headers goes there */
 #include <stdio.h>
 
 /**
@@ -28,8 +25,8 @@ int main(void)
 	} else if (n == 0)
 	{
 		printf("%d is zero\n", n);
+	} else if (n < 0)
 	{
-		else
 		printf("%d is negative\n", n);
 	}
 
