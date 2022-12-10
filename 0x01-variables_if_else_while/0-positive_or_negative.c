@@ -24,13 +24,13 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%n, is Positive\n") n;
+		printf("%n, is Positive") n;
 	} else if (n == 0)
 	{
-		printf("%n, is zero\n") n;
+		printf("%n, is zero") n;
 	{
 	else
-		printf("%n, is negative\n") n;
+		printf("%n, is negative") n;
 	}
 
 	return (0);
