@@ -6,9 +6,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Initiating Betty
  *
- * Description: 'c programming variables'
+ * Description: c programming variables
  *
  * Return Always 0 (Success)
  */
@@ -24,13 +24,13 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%n, is Positive") n;
+		printf("%d is Positive\n",n);
 	} else if (n == 0)
 	{
-		printf("%n, is zero") n;
+		printf("%d is zero\n",n);
 	{
 	else
-		printf("%n, is negative") n;
+		printf("%d is negative\n",n);
 	}
 
 	return (0);
