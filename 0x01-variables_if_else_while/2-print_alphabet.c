@@ -12,7 +12,6 @@
 int main(void)
 {
 	int x = 'A';
-	char ch = '\n';
 
 	while (x <= 'Z')
 	{
