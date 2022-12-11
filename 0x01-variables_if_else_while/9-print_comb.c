@@ -13,9 +13,11 @@ int main(void)
 {
 	int num;
 	int ch = ',';
+	int sp = ' ';
 
 	for (num = '0'; num <= '9'; num++)
 	{
+		putchar(sp);
 		putchar(num);
 		putchar(ch);
 	}
