@@ -15,7 +15,7 @@ int main(void)
 {
 	int ch;
 
-	for (ch='0x0'; ch<='0xf'; ch++)
+	for (ch = "0x0"; ch <= "0xf"; ch++)
 		putchar(ch);
 	putchar('\n');
 
