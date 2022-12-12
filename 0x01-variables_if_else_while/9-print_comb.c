@@ -22,8 +22,8 @@ int main(void)
 		putchar((num % 10) + '0');
 		if (num < 9)
 		{
-			putchar(sp);
 			putchar(ch);
+			putchar(sp);
 		}
 	}
 	putchar('\n');
