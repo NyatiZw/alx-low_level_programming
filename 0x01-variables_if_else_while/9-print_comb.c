@@ -18,9 +18,9 @@ int main(void)
 
 	for (num = 0; num < 10;)
 	{
-		putchar(sp);
 		putchar((num % 10) + '0');
 		putchar(ch);
+		putchar(sp);
 		num++;
 	}
 
