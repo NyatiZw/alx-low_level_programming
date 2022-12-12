@@ -17,14 +17,15 @@ int main(void)
 	int ch = ',';
 	int num;
 
-	for (num = 0; num < 10;)
+	for (num = 0; num <= 9; num++)
 	{
 		putchar((num % 10) + '0');
-		num++;
-		putchar(ch);
-		putchar(sp);
+		if (num < 9)
+		{
+			putchar(sp);
+			putchar(ch);
+		}
 	}
-
 	putchar('\n');
 
 	return (0);
