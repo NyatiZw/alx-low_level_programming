@@ -1,5 +1,6 @@
 # include <stdio.h>
 # include <ctype.h>
+# include <string.h>
 
 /**
  * main - Entry Point
@@ -19,11 +20,11 @@ int main(void)
 	for (num = 0; num < 10;)
 	{
 		putchar((num % 10) + '0');
+		num++;
 		putchar(ch);
 		putchar(sp);
-		num++;
 	}
-
+	
 	putchar('\n');
 
 	return (0);
