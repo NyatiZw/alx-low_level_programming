@@ -24,8 +24,11 @@ int main(void)
 		{
 			putchar(num1);
 			putchar(num2);
-			putchar(ch);
-			putchar(sp);
+			if (num1 <= '9' && num2 <= '9')
+			{
+				putchar(ch);
+				putchar(sp);
+			}
 		}
 	}
 	putchar('\n');
