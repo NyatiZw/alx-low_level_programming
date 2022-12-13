@@ -10,9 +10,24 @@
 
 int main(void)
 {
-	int ch = "_putchar";
+	int ch = '_';
+	int p = 'p';
+	int u = 'u';
+	int t = 't';
+	int c = 'c';
+	int h = 'h';
+	int a = 'a';
+	int r = 'r';
 
 	putchar(ch);
+	putchar(p);
+	putchar(u);
+	putchar(t);
+	putchar(c);
+	putchar(h);
+	putchar(a);
+	putchar(r);
+	putchar('\n');
 
 	return (0);
 
