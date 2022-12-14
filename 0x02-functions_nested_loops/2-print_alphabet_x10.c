@@ -12,6 +12,7 @@
 void print_alphabet_x10(void)
 {
 	int alpha, sp;
+
 	sp = 0;
 
 		while (sp < 10)
@@ -20,7 +21,7 @@ void print_alphabet_x10(void)
 			{
 				putchar(alpha);
 			}
+			sp++;
+			putchar('\n');
 		}
-		sp++;
-		putchar('\n');
 }
