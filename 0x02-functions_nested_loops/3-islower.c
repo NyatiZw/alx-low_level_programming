@@ -13,10 +13,9 @@ int main(void)
 {
 	int c;
 
-	if(_islower(c) >= 'a' && c <= 'z');
+	if(_islower(c) >= 'a' && c <= 'z')
 	{
 	_putchar('1');
-	else _putchar('0');
+	} else _putchar('0');
 	return (1);
-	}
 }
