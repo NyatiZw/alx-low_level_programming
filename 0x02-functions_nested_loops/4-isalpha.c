@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * islower - entry point
+ * int _isalpha (int c) - entry point
  *
  * description: 'function _islower()'
  *
@@ -9,13 +9,12 @@
  *
  */
 
-void isalpha(void)
+int _isalpha(int c)
 {
-	int c;
 
-	if ( _isalpha(c))
-		_putchar('1');
-		else _putchar('0');
-
-		return (1);
+	if(_isalpha(c) >= 'a' && c <= 'z')
+	{
+	_putchar('1');
+	} else _putchar('0');
+	return (1);
 }
