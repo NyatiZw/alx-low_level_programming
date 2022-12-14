@@ -13,6 +13,7 @@ void print_alphabet_x10(void)
 {
 	int alpha, sp;
 	sp = 0;
+
 		while (sp < 10)
 		{
 			for (alpha = 'a'; alpha <= 'z'; alpha++)
