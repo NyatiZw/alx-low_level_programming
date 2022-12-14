@@ -7,18 +7,7 @@
  *
  */
 
-islower()
-
-int main(void)
+int islower(void)
 {
-	int c;
-
-	c = 'T';
-
-	if c (islower 97 && c <= 122)
-		putchar('1');
-		else
-		putchar('0');
-
-		return (1);
+	putchar(c, _islower(c));
 }
