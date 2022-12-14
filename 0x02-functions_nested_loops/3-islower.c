@@ -2,6 +2,7 @@
 
 /**
  * islower - entry point
+ *
  * description: 'function _islower()'
  *
  * Return: 1 (Success) || 0 (Not)
@@ -10,6 +11,6 @@
 
 void islower(void)
 {
-	int; 
+	int;
 	putchar(c, _islower(c));
 }
