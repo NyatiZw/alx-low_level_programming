@@ -1,18 +1,21 @@
 # include "main.h"
 
-/** int isalpha: entry point
+/**
+ * islower - entry point
  *
- * Description:- 'Function int _isalpha to check code'
+ * description: 'function _islower()'
  *
- * Return: 1
+ * Return: 1 (Success) || 0 (Not)
  *
  */
 
-int isaplha(void)
+void isalpha(void)
 {
 	int c;
 
-	res = _isalpha(char c);
+	if ( _isalpha(c))
+		_putchar('1');
+		else _putchar('0');
 
-	result (0);
+		return (1);
 }
