@@ -1,2 +1,2 @@
 # include "main.h"
-int putchar(int character);
+int putchar(int c);
