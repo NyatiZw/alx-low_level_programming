@@ -9,7 +9,7 @@
  *
  */
 
-int main(void)
+int _islower(int c)
 {
 	int c;
 
