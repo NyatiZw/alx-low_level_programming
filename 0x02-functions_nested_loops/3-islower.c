@@ -9,7 +9,7 @@
  *
  */
 
-void islower(void)
+void _islower(void)
 {
 	int;
 	putchar(c, _islower(c));
