@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * print_alphabetx10 - entry
+ * print_alphabet_x10 - entry
  *
  * Description:- " c functions & nested loops"
  *
