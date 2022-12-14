@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: "c functions & nested loops"
+ * Description:- "c functions & nested loops"
  *
  * Return: Always 0 (Success)
  *
@@ -11,15 +11,13 @@
 
 void print_alphabet(void)
 {
-	char alpha;
-	
-	alpha = 'a';
-	while (alpha <= 'z')
+	int alpha;
+
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
 		putchar(alpha);
-		alpha++;
-		putchar('\n');
 	}
+	putchar('\n');
 }
 
 int main(void)
