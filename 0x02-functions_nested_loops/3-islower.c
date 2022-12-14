@@ -13,11 +13,9 @@ void _islower(void)
 {
 	int c;
 
-	c = '';
-
 	if (islower(c))
 		putchar('1');
 		else putchar('0');
 
-		return (0);
+		return (1);
 }

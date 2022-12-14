@@ -10,25 +10,16 @@
 
 int main(void)
 {
-	int ch = '_';
-	int p = 'p';
-	int u = 'u';
-	int t = 't';
-	int c = 'c';
-	int h = 'h';
-	int a = 'a';
-	int r = 'r';
+	int ch;
 
-	putchar(ch);
-	putchar(p);
-	putchar(u);
-	putchar(t);
-	putchar(c);
-	putchar(h);
-	putchar(a);
-	putchar(r);
-	putchar('\n');
-
+	_putchar("ch");
+	_putchar("p");
+	_putchar("u");
+	_putchar("t");
+	_putchar("c");
+	_putchar("h");
+	_putchar("a");
+	_putchar("r");
+	_putchar('\n');
 	return (0);
-
 }

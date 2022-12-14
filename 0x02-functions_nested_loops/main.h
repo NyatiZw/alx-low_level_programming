@@ -1,12 +1,12 @@
 # ifndef MAIN_H_
 # define MAIN_H_
 
-int putchar(int character);
+int _putchar(int char *);
 
 void print_alphabet(void);
 
 void print_alphabet_x10(void);
 
-int islower(int c);
+int _islower(int c);
 
 #endif
