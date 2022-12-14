@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * islower - entry point
+ * main - entry point
  *
  * description: 'function _islower()'
  *
@@ -9,12 +9,14 @@
  *
  */
 
-int _islower(int c)
+int main(void)
 {
-	if _islower(c >= 'a' && c <= 'z');
+	int c;
+
+	if(_islower(c) >= 'a' && c <= 'z');
 	{
-		_putchar('1');
+	_putchar('1');
 	else _putchar('0');
+	return (1);
 	}
-		return (1);
 }
