@@ -9,9 +9,9 @@
  *
  */
 
-int _abs(int)
+int _abs(int r)
 {
-	int c = int, n;
+	int c = r, n;
 
 	n = _abs(c);
 
