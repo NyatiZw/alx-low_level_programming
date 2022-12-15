@@ -1,9 +1,9 @@
 # include "main.h"
 
 /**
- * int _abs(int) -entry point
+ * abs -entry point
  *
- * Description:- 'function to compute the absolute value of an integer'
+ * Description:- 'function to compute the absolute value of an integer @r'
  *
  * Return: Always 0 (Success)
  *
