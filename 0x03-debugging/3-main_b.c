@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * main - takes a date and prints how many days are left in the year, taking
- * leap years into account
+ * convert_day - takes date and prints how many are left in the year
+ * Description : '
+ * @ int: this is an interger passed to convert date
  * Return: 0
  */
 
