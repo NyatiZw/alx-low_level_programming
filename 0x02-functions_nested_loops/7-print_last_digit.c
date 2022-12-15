@@ -15,11 +15,11 @@ int print_last_digit(r)
 
 	ld = n % 10;
 
-	if (ld == 0)
-		_putchar(n);
-	else if (ld > 5)
-		_putchar(ld);
-	else if (ld <= 6 && 10)
-		_putchar(ld);
-	return 0;
+	if (ld < 0)
+	{
+		ld = ld * -1;
+	}
+		_putchar(ld + '0');
+
+		return (ld);
 }
