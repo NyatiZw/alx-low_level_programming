@@ -7,10 +7,9 @@
  * Return: 0
  */
 
+int convert_day(int, int);
 int main(void)
 {
-
-/*	int convert_day(int, int);*/
 	int month;
 	int day;
 	int year;
