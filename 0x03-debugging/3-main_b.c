@@ -3,8 +3,7 @@
 
 /**
  * convert_day - takes date and prints how many are left in the year
- * Description : '
- * @ int: this is an interger passed to convert date
+ * @int: this is an integer value
  * Return: 0
  */
 
