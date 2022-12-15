@@ -4,7 +4,7 @@
 /**
  * print_to_98 - Prints numbers from n to 98
  *
- * description: start printing numbers to 98
+ * description: n starts printing numbers to 98
  *
  * Return: Always 0
  */
