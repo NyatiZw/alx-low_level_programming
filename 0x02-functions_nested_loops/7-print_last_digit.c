@@ -9,7 +9,7 @@
  *
  */
 
-int print_last_digit(n)
+int print_last_digit(r)
 {
 	int ld = 0, n;
 
