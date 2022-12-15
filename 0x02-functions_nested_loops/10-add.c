@@ -3,6 +3,8 @@
 /**
  * add - function to display times table
  *
+ * Descriotion:- 'num 1 and num2 used as intergers to add function'
+ *
  * Return: times table
  *
  */
