@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * void jack_bauer(void) - entry point
+ * jack_bauer - entry point
  *
  * Description:- " c functions & nested loops"
  *
