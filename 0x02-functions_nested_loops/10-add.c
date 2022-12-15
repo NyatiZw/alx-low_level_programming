@@ -9,14 +9,12 @@
 
 
 
-int add(int a, int b)
+int add(num1, num2)
 
 {
-	int a, b;
-
 	int res;
 
-	res = a +b;
-
+	res = num1 + num2;
+	
 	return(res);
 }
