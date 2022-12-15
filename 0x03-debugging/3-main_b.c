@@ -10,7 +10,7 @@
 int main(void)
 {
 
-	int convert_day(int, int);
+/*	int convert_day(int, int);*/
 	int month;
 	int day;
 	int year;
