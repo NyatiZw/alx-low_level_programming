@@ -2,16 +2,14 @@
 /**
  * _isdigit- function to find is character is Uppercase
  *
- * @c: 'character to be checked'
+ * @i: 'integer to be checked'
  *
  * Return: 1 if digit 0 otherwise
  */
 
 
-int _isdigit(int c)
+int _isdigit(int i)
 {
-	int i;
-
 	for (i = 0; i <= 10; i++)
 	{
 		_putchar(c);
