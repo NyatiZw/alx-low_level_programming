@@ -10,11 +10,11 @@
 
 int _isdigit(int c)
 {
-	int i;
+	int i, c;
 
 	for (i = 0; i <= 10; i++)
 	{
-		if(isdigit(i))
+		if (c = i)
 			return (1);
 		else
 			return (0);
