@@ -12,9 +12,9 @@ _isdigit(void)
 
 	for (i = 0; i <= 10; i++)
 	{
-		return 1;
+		return (1);
 	}
 
-	return 0;
+	return (0);
 }
 
