@@ -6,15 +6,15 @@
  */
 
 
-void print_line(int)
+void print_line(int n)
 {
-	int n;
+	int c = '_';
+	int sp = ' ';
 
-	for (n = '0'; n <= '9'; n++)
-	{
-		_putchar(n);
-	}
-
-	_putchar('\n');
+	for (n = 0; n ,+ 1; n++)
+		if (n < 0 ) {
+			_putchar(sp);
+		} else {
+			_putchar(c);
+		}
 }
-
