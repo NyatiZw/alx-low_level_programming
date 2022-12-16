@@ -1,3 +1,3 @@
 # include "main.h"
 
-int _putchar(int c);
+int _putchar(int);
