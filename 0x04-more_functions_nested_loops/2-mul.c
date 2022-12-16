@@ -2,7 +2,8 @@
 /**
  * mul - function to multiple two integers
  *
- * @int: 'integer to be multiplied'
+ * @a: 'integer to be multiplied'
+ * @b: 'integer to be multiplied'
  *
  * Return: result
  */
