@@ -10,15 +10,13 @@
 
 int _isdigit(int c)
 {
-	int i = c;
+	int i;
 
 	for (i = 0; i <= 10; i++)
 	{
-		if (isdigit(c))
-			_putchar(c);
-				return (1);
-		else
-			_putchar(c);
-				return (0);
+		_putchar(c);
 	}
+
+	return (1);
 }
+
