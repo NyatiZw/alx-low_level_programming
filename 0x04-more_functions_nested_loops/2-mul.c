@@ -10,7 +10,9 @@
 
 int mul(int, int)
 {
-	int a, b;
+	int a;
+
+	int b;
 
 	int res;
 
