@@ -14,7 +14,7 @@ int _isdigit(int c)
 
 	for (i = 0; i <= 10; i++)
 	{
-		return (1);
+		_putchar(c);
 	}
 
 	return (0);
