@@ -4,20 +4,13 @@
  *
  * @int: 'integer to be multiplied'
  *
- * Return: 0 (Success)
+ * Return: result
  */
 
 
-int mul(int, int)
+int mul(int a, int b)
 {
-	int a;
-
-	int b;
-
-	int res;
-
-	res = a * b;
-
-	return (0);
+	int result = a * b;	
+	return (result);
 }
 
