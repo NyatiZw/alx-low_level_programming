@@ -1,10 +1,10 @@
 # include "main.h"
 /**
- * _isupper: function to find is character is Uppercase
+ * _isupper- function to find is character is Uppercase
  *
- * description c:- 'character to be checked'
+ * @c: 'character to be checked'
  *
- * return: 1 if uppercase and 0 if not
+ * Return: 1 if uppercase and 0 if not
  */
 
 
