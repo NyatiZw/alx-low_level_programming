@@ -7,7 +7,7 @@
  * Return: void
  */
 
-
+int _putchar(int);
 void print_line(int n)
 {
 	int c = '_';
