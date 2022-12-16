@@ -8,7 +8,7 @@
  */
 
 
-int _isdigit(int)
+int _isdigit(int c)
 {
 	int i;
 
@@ -17,7 +17,7 @@ int _isdigit(int)
 		return (1);
 	}
 
-	_putchar('\n');
+	_putchar('\n);
 
 	return (0);
 }
