@@ -11,11 +11,9 @@ int main(void)
 {
 	char c;
 
-	c = 0;
+	c = '0';
 	printf("%c: %d\n", c, _isdigit(c));
-
-	c = "char a";
+	c = 'a';
 	printf("%c: %d\n", c, _isdigit(c));
-
 	return (0);
 }

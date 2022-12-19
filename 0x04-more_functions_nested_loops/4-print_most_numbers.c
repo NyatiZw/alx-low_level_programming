@@ -1,19 +1,25 @@
 # include "main.h"
+
 /**
- * print_most_numbers- function to print numbers
+ * print_numbers- function to print numbers and symbols
  *
  * Return: void
  */
 
-
-void print_most_numbers(void)
+void print_numbers(void)
 {
 	int i;
+	int ch = 'x';
 
-	for (i = 0; i <= 9; i++)
+	for (i = '0'; i <= '9';)
 	{
 		if (i == 2 && i == 4)
-		_putchar('x');
+		{
+			_putchar(ch);
+		}
+		_putchar(i);
+		i++;
 	}
-	_putchar(i);
+
+	_putchar('\n');
 }

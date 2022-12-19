@@ -1,4 +1,5 @@
 # include "main.h"
+
 /**
  * _isdigit- function to find is character is Uppercase
  *
@@ -10,15 +11,9 @@
 
 int _isdigit(int c)
 {
-	int i;
-
-	for (i = 0; i <= 10; i++)
+	if (c >= 48 && c <= 57)
 	{
 		return (1);
 	}
-
-	_putchar('\n);
-
 	return (0);
 }
-
