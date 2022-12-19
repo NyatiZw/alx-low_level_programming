@@ -1,25 +1,26 @@
 # include "main.h"
 
 /**
- * print_numbers- function to print numbers and symbols
+ * print_most_numbers- entry point
+ *
+ * Description:- function to print numbers from 0-9
+ *
+ * @ _putchar: is used to print on stdout
  *
  * Return: void
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
-	int ch = 'x';
+	int x = x;
 
-	for (i = '0'; i <= '9';)
+	for (i = 0; i <= 9; i++)
 	{
 		if (i == 2 && i == 4)
 		{
-			_putchar(ch);
+			_putchar(x);
 		}
 		_putchar(i);
-		i++;
 	}
-
-	_putchar('\n');
 }
