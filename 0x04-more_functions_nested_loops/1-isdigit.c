@@ -1,9 +1,11 @@
 # include "main.h"
 
 /**
- * _isdigit- function to find is character is Uppercase
+ * _isdigit- function to find is character is digit or not
  *
- * @int: integer value to check code
+ * Description:- function to find is character is digit or not
+ *
+ * @c: integer value to check code
  *
  * Return: 1 if digit 0 otherwise
  */
