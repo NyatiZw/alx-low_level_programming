@@ -5,7 +5,6 @@
  *
  * Description:- 'function that updates the value it points to to 98'
  * @n:- reset to integer parameter
- * @_putchar:- prints to std output
  *
  * Return: Void
  */
