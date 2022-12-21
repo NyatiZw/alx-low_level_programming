@@ -15,5 +15,6 @@ void swap_int(int *a, int *b)
 	int j;
 
 	while (j == *a && *b){
-		_putchar(j)
+		_putchar(j);
+	}
 }
