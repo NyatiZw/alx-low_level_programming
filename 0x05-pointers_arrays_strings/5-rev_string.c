@@ -9,7 +9,7 @@
  * Return: reversed string
  */
 
-void rev_string(char* s)
+void rev_string(char *s)
 {
 
 	char *start;
@@ -33,4 +33,5 @@ void rev_string(char* s)
 		start = s;
 		end = s + l - 1;
 	}
+	return;
 }
