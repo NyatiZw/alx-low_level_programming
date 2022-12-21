@@ -33,5 +33,4 @@ void rev_string(char *s)
 		start = s;
 		end = s + l - 1;
 	}
-	return;
 }
