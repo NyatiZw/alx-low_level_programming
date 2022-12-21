@@ -12,24 +12,24 @@
 void rev_string(char *s)
 {
 	int i;
-	int l;
+	int j, l = 0;
 	char *start;
 	char *end;
 	char ch;
 
-	l = _strlen(s);
-	
 	start = s;
-	
 	end = s;
 
-	for (i = 0; i < (l - 1) / 2; i++) {
+	for (j = 0; s[j] != '\0'; j++)
+	{
+		for (i = 0; i < (l - 1) / 2; i++)
+		{
+			ch = *end;
+			*end = *start;
+			*start = ch;
 
-		ch = *end;
-		*end = *start;
-		*start = ch;
-
-		start++;
-		end--;
+			start++;
+			end--;
+		}
 	}
 }
