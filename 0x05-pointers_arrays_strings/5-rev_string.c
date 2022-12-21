@@ -19,6 +19,7 @@ void rev_string(char *s)
 	int j;
 
 	int l = 0;
+
 	start = s;
 	end = s + l - 1;
 
