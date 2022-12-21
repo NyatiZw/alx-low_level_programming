@@ -18,21 +18,19 @@ void rev_string(char* s)
 	int i;
 	int j;
 
-	int l = 0;
-
-	start = s;
-	end = s + l - 1;
-
-	for (j = 0; s[j] != '\0'; j++)
-	{
-		for (i = 0; i < (l - 1) / 2; i++)
+	while (int l = 0;) {
+		for (j = 0; s[j] != '\0'; j++)
 		{
-			ch = *end;
-			*end = *start;
-			*start = ch;
-
-			start++;
-			end--;
+			for (i = 0; i < (l - 1) / 2; i++)
+			{
+				ch = *end;
+				*end = *start;
+				*start = ch;
+				start++;
+				end--;
+			}
 		}
+		start = s;
+		end = s + l - 1;
 	}
 }
