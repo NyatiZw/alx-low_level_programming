@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - Entry point
+ * print_rev - Entry point
  *
  * Description:- 'function that prints a string in reverse'
  * @s:- string
