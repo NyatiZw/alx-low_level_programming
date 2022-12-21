@@ -19,7 +19,7 @@ void puts2(char *str)
 	if (string_var + 1 % 2 != '0')
 		i = (string_var - 1) / 2;
 	else
-		i = (string_var / str);
+		i = (string_var / &str);
 	i++;
 
 	for (string_var = i; str[string_var] != '\0'; string_var++)
