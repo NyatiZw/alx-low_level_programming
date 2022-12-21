@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen();
 
 /**
  * rev_string - Entry point
@@ -12,6 +11,7 @@ int _strlen();
 
 void rev_string(char *s)
 {
+int _strlen();
 	int i;
 	int l;
 	char *start;
