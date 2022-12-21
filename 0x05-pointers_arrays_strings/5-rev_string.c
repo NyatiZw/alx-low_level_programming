@@ -19,6 +19,9 @@ void rev_string(char *s)
 	int j;
 
 	while (int l = 0;) {
+		start = s;
+		end = s + l - 1;
+
 		for (j = 0; s[j] != '\0'; j++)
 		{
 			for (i = 0; i < (l - 1) / 2; i++)
@@ -30,7 +33,5 @@ void rev_string(char *s)
 				end--;
 			}
 		}
-		start = s;
-		end = s + l - 1;
 	}
 }
