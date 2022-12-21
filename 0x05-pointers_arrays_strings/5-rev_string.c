@@ -35,12 +35,3 @@ void rev_string(char *s)
 		end--;
 	}
 }
-
-int str_len(char *ptr)
-{
-	int i = 0;
-
-	while (*(ptr + i) != '\0')
-		i++;
-	return (i);
-}
