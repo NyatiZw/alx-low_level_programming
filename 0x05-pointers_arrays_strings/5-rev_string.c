@@ -21,15 +21,15 @@ void rev_string(char *s)
 	int l = 0;
 
 	start = s;
-	end = s;
+	end = s + l - 1;
 
 	for (j = 0; s[j] != '\0'; j++)
 	{
 		for (i = 0; i < (l - 1) / 2; i++)
 		{
-			ch = *start;
-			*start = *end;
-			*end = ch;
+			ch = *end;
+			*end = *start;
+			*start = ch;
 
 			start++;
 			end--;
