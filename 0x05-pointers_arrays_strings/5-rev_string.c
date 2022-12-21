@@ -27,9 +27,9 @@ void rev_string(char *s)
 	{
 		for (i = 0; i < (l - 1) / 2; i++)
 		{
-			ch = *end;
-			*end = *start;
-			*start = ch;
+			ch = *start;
+			*start = *end;
+			*end = ch;
 
 			start++;
 			end--;
