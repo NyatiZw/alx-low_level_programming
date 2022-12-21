@@ -6,7 +6,7 @@
  *
  * Description:- 'function that prints n elements of an array'
  * @n:- elements
- * @int:- integer
+ * @a:- integer
  *
  * Return: length of string
  */
@@ -15,12 +15,13 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++) 
+	for (i = 0; i < n; i++)
 	{
-		if ( i != n -1) 
+		if (i != n - 1)
 		{
 			printf("%d, ", a[i]);
-		} else {
+		} else
+		{
 			printf("%d, ", a[i]);
 			printf("\n");
 		}
