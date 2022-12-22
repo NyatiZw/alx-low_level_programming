@@ -16,7 +16,6 @@ char *_strcat(char *str1, char *str2)
 
 	while (str1[i] != '\0')
 	{
-		str1++;
 		i++;
 	}
 
