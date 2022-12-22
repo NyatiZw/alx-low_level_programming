@@ -28,7 +28,7 @@ char *_strcat(char *str1, char *str2)
 		j++;
 	}
 
-	_putchar(*str1);
+	_putchar(str1);
 
 	return (str1);
 }
