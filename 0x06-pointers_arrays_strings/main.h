@@ -2,7 +2,7 @@
 #define _MAIN_H
 
 char *_strcat(char *, char *);
-int _putchar(int);
+int _putchar(char);
 char *_strncat(char *dest, char *src, int n);
 
 #endif /* _MAIN_H */

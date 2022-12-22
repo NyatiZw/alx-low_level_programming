@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _strcat- function to concatenate two strings
+ * _strncat- function to concatenate two strings
  *
  * Description: 'function that concatenates two strings'
  * @str1: destination string
  * @str2: source string
+ * @n: number of bytes from str2
  *
  * Return: 0 (Success)
  */
 
-char *_strcat(char *str1, char *str2)
+char *_stnrcat(char *str1, char *str2, int n)
 {
 	int i = 0, j = 0;
 
