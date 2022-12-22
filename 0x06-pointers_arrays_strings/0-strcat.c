@@ -30,5 +30,5 @@ char *_strcat(char *str1, char *str2)
 
 	_putchar(*str1);
 
-	return (0);
+	return;
 }
