@@ -10,7 +10,7 @@
  * Return: 0 (Success)
  */
 
-char *_strncat(char *str1, char *str2)
+char *_strcat(char *str1, char *str2)
 {
 	int i = 0, j = 0;
 
