@@ -18,14 +18,18 @@ char *_strcat(char *dest, char *src)
 
 	int i = 0, j = 0;
 
-	while (str1[i] != '\0') {
+
+
+	while (str1[i] != '\0')
+	{
 		temp[j] = str1[i];
 		i++;
 		j++;
 	}
 
 	i = 0;
-	while (str2[i] != '\0') {
+	while (str2[i] != '\0')
+	{
 		temp[j] = str2[i];
 		i++;
 		j++;
@@ -34,5 +38,5 @@ char *_strcat(char *dest, char *src)
 
 	_putchar("%s", temp);
 
-	return 0;
+	return (0);
 }
