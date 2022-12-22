@@ -14,6 +14,7 @@
 char *_strncat(char *str1, char *str2, int n)
 {
 	int i = 0, j = 0;
+	int n = " ";
 
 	while (str1[i] != '\0')
 	{
