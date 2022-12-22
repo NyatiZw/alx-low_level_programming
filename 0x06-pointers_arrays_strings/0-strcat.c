@@ -27,6 +27,7 @@ char *_strcat(char *str1, char *str2)
 	}
 
 	*str1 = '\0';
+	_putchar(a);
 	
 	return (a);
 }
