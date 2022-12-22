@@ -12,11 +12,9 @@
 
 char *_strcat(char *str1, char *str2)
 {
-	int i, j;
-
 	while (*str1[i] != '\0')
 	{
-		str++;
+		str1++;
 	}
 
 	while (*str2[j] != '\0')
