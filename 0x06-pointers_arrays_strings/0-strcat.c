@@ -12,18 +12,27 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char str1[15], str2[15];
-	int i = 0;
-	int j = 0;
+	char str1[100];
+	char str2[100];
+	char temp[100];
+
+	int i = 0, j = 0;
 
 	while (str1[i] != '\0') {
-		while (str2[j] != '\0') {
-			str1[i] = str2[j];
-			i++;
-			j++;
-		}
-		str1[i] = '\0';
-		_putchar("%s", str1);
+		temp[j] = str1[i];
+		i++;
+		j++;
 	}
-	return (str1);
+
+	i = 0;
+	while (str2[i] != '\0') {
+		temp[j] = str2[i];
+		i++;
+		j++;
+	}
+	temp[j] = '\0';
+
+	_putchar("%s", temp);
+
+	return 0;
 }
