@@ -12,22 +12,21 @@
 
 char *_strcat(char *str1, char *str2)
 {
-	int i = 0, j = 0;
+	char *a = str1;
 
-	while (str1[i] != '\0')
+	while (*str1 != '\0')
 	{
-		i++;
+		str++;
 	}
 
-	while (str2[j] != '\0')
+	while (*str2 != '\0')
 	{
-		str1[i] = str2[j];
-		j++;
-		i++;
+		*str1 = *str2;
+		str1++;
+		str2++;
 	}
 
-	str1[i] = '\0';
-	_putchar(*str1);
-
-	return (str1);
+	*str1 = '\0';
+	
+	return (a);
 }
