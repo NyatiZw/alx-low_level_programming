@@ -7,7 +7,7 @@
  * @s1: string destination
  * @s2: string source
  *
- * Return: 0 (Success)
+ * Return: s1
  */
 
 int *_strcmp(char *s1, char *s2)
