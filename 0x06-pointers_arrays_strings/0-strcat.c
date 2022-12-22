@@ -12,14 +12,14 @@
 
 char *_strcat(char *str1, char *str2)
 {
-	char *a = str1;
+	int i, j;
 
-	while (*str1 != '\0')
+	while (*str1[i] != '\0')
 	{
 		str++;
 	}
 
-	while (*str2 != '\0')
+	while (*str2[j] != '\0')
 	{
 		*str1 = *str2;
 		str1++;
@@ -29,5 +29,5 @@ char *_strcat(char *str1, char *str2)
 	*str1 = '\0';
 	_putchar(a);
 	
-	return (a);
+	return (str1);
 }
