@@ -22,8 +22,6 @@ char *_strcat(char *str1, char *str2)
 
 	while (str2[j] != '\0')
 	{
-		str1++;
-		str2++;
 		j++;
 	}
 
