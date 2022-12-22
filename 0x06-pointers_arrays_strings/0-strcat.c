@@ -5,8 +5,8 @@
  * _strcat- function to concatenate two strings
  *
  * Description: 'function that concatenates two strings'
- * @dest: destination string
- * @src: source string
+ * @str1: destination string
+ * @str2: source string
  *
  * Return: 0 (Success)
  */
