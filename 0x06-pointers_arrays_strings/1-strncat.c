@@ -4,26 +4,26 @@
  * _strncat- Entry Point
  *
  * Description:- ' Function that concatenates two strings
- * @dest: string destination
- * @src: string source
+ * @str1: string destination
+ * @str2: string source
  * @n: bytes replaced
  *
  * Return: dest
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *str1, char *str2, int n)
 {
 	int i, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	for (i = 0; str1[i] != '\0'; i++)
 	{
-		dest++;
+		++str1;
 	}
-	for (j = 0; src[j] != '\0' && j < n; j++)
+	for (j = 0; str2[j] != '\0' && j < n; j++)
 	{
-		dest[i + j] = src[j];
+		str1[i + j] = str2[j];
 	}
-	dest[i + j] = '\0';
+	str1[i + j] = '\0';
 
-	return (dest);
+	return (str1);
 }
