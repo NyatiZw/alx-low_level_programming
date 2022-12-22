@@ -7,28 +7,26 @@
  * @str1: destination string
  * @str2: source string
  *
- * Return: str1
+ * Return: 0 (Success)
  */
 
-char *_strcat(char *str1, char *str2)
+char *_strncat(char *str1, char *str2)
 {
-	int i = 0, j;
+	int i = 0, j = 0;
 
 	while (str1[i] != '\0')
 	{
-		str1++;
 		i++;
 	}
 
 	while (str2[j] != '\0')
 	{
-		*str1 = *str2;
-		i++;
 		j++;
+		i++;
 	}
 
-	*str1 = '\0';
-	_putchar(str1);
-	
-	return (str1);
+	str1[i] = str2[j];
+	_putchar(*str1);
+
+	return (0);
 }
