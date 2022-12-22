@@ -13,22 +13,16 @@
 
 char *_strncat(char *str1, char *str2, int n)
 {
-	int i = 0, j = 0;
-	int n = " ";
+	int i, j;
 
-	while (str1[i] != '\0')
+	for (i = 0; str1[i] != '\0'; i++)
 	{
-		i++;
+		continue;
 	}
-
-	while (str2[j] != '\0')
+	for (j = 0; str2[j] != '\0' && j < n; j++)
 	{
-		j++;
-		i++;
+		str1[i + j] = str2[j];
 	}
-
-	str1[i]=str2[j];
-	_putchar(*str1);
-
-	return (0);
+	str1[ i + j] = '\0';
+	return (str1);
 }
