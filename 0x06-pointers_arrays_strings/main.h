@@ -2,6 +2,6 @@
 #define _MAIN_H
 
 char *_strcat(char *, char *);
-int _putchar(char);
+int _putchar(int);
 
 #endif /* _MAIN_H */

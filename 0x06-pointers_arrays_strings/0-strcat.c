@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * *_strcat: Entry Point
+ * _strcat- function to concatenate two strings
  *
- * Description: 'function that concatenates to strings'
+ * Description: 'function that concatenates two strings'
+ * @dest: destination string
+ * @src: source string
  *
  * Return: 0 (Success)
  */
 
 char *_strcat(char *dest, char *src)
 {
-	char str1[], str2[];
+	char str1[15], str2[15];
 	int i = 0;
 	int j = 0;
 
