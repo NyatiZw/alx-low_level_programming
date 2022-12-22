@@ -7,7 +7,7 @@
  * @str1: destination string
  * @str2: source string
  *
- * Return: 0 (Success)
+ * Return: str1
  */
 
 char *_strcat(char *str1, char *str2)
@@ -30,5 +30,5 @@ char *_strcat(char *str1, char *str2)
 
 	_putchar(*str1);
 
-	return (0);
+	return (str1);
 }
