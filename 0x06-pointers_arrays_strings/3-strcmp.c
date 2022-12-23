@@ -24,5 +24,5 @@ int *_strcmp(char *s1, char *s2)
 	}
 	str1[i + j] = '\0';
 
-	return (0);
+	return (s1);
 }
