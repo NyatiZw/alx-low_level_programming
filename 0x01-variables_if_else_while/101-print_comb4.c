@@ -22,10 +22,10 @@ int main(void)
 				putchar(a % 10 + '0');
 				putchar(b % 10 + '0');
 				putchar(c % 10 + '0');
-				putchar(',');
-				putchar(' ');
 				c++;
 			}
+			putchar(',');
+			putchar(' ');
 			b++;
 		}
 		if (a == 7 && b == 8 && c == 9)
