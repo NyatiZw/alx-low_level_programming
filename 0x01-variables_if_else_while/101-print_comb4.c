@@ -23,7 +23,7 @@ int main(void)
 				putchar(b % 10 + '0');
 				putchar(c % 10 + '0');
 				putchar(',');
-				putchat(' ');
+				putchar(' ');
 				c++;
 			}
 			b++;
