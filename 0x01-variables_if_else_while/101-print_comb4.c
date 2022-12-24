@@ -30,8 +30,9 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-			a++;
 		}
+
+			a++;
 	}
 	putchar('\n');
 	return (0);
