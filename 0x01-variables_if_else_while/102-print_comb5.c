@@ -15,11 +15,11 @@ int main(void)
 
 	for (a = 0; a < 9; a++)
 	{
-		for (b = a + 1; b < 8; b++)
+		for (b = a; b < 9; b++)
 		{
 			for (i = 0; i < 9; i++)
 			{
-				for (j = i + 1; j <= 9; j++)
+				for (j = i + 2; j < 9; j++)
 				{
 					putchar((a % 10) + '0');
 					putchar((b % 10) + '0');
