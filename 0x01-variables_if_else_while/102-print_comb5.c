@@ -13,11 +13,11 @@ int main(void)
 {
 	int a, b, i, j;
 
-	for ( a = 0; a <= 9; a++)
+	for (a = 0; a < 9; a++)
 	{
-		for (b = a + 1; b <= 8; b++)
+		for (b = a + 1; b < 8; b++)
 		{
-			for (i = 0; i <= 9; i++)
+			for (i = 0; i < 9; i++)
 			{
 				for (j = i + 1; j <= 9; j++)
 				{
@@ -26,7 +26,7 @@ int main(void)
 					putchar(' ');
 					putchar((i % 10) + '0');
 					putchar((j % 10) + '0');
-					if ( a == 9 && b == 8 && i == 9 && j ==9)
+					if (a == 9 && b == 8 && i == 9 && j == 9)
 						continue;
 					putchar(',');
 					putchar(' ');
