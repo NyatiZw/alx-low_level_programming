@@ -13,7 +13,7 @@ int main(void)
 {
 	int a = 0, b = 1, c = 2;
 
-	while (a < 1)
+	while (a < 8)
 	{
 		for (b = a + 1; b < 9;)
 		{
