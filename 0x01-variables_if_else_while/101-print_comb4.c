@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.c>
 
 /**
  * main - Entry Point
@@ -12,18 +11,28 @@
 
 int main(void)
 {
-	int num[];
 	int a = 0, b = 1, c = 2;
 
-	while ((num[a] <= 7) || (num[b] <= 8) || (num[c] <= 9)) 
+	while (a = 0)
 	{
-		num[c] != 9 ? ++num[c] : (num[b] != 8 ? (++num[b], num[c] = num[b] + 1) : (++num[a], num[b] = num[a] + 1, num[c] = num[b] + 1));
-
-		putchar(num[a]);
-		putchar(num[b]);
-		putchar(num[c]);
-		putchar('\0');
+		for (b = a + 1; b < 9;)
+		{
+			for (c = b + 1; c < 10)
+			{
+				putchar(a % 10 + '0');
+				putchar(b % 10 + '0');
+				putchar(c % 10 + '0');
+				c++;
+			}
+			b++;
+		}
+		if (a == 7 && b == 8 && c == 9)
+		{
+			putchar(',');
+			putchar(' ');
+			a++;
+		}
 	}
-
+	putchar('\n');
 	return (0);
 }
