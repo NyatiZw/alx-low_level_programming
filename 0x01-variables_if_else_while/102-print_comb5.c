@@ -24,7 +24,7 @@ int main(void)
 					putchar((a % 10) + '0');
 					putchar((b % 10) + '0');
 					putchar(' ');
-					putcahr((i % 10) + '0');
+					putchar((i % 10) + '0');
 					putchar((j % 10) + '0');
 					if ( a == 9 && b == 8 && i == 9 && j ==9)
 						continue;
