@@ -1,4 +1,5 @@
-# include <stdio.h>
+#include <stdio.h>
+#include <ctype.c>
 
 /**
  * main - Entry Point
