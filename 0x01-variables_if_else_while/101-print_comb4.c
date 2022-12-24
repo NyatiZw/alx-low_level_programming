@@ -20,10 +20,10 @@ int main(void)
 			for (c = b + 1; c < 10;)
 			{
 				putchar(a % 10 + '0');
-				putchar(',');
-				putchar(' ');
 				putchar(b % 10 + '0');
 				putchar(c % 10 + '0');
+				putchar(',');
+				putchar(' ');
 				c++;
 			}
 			b++;
