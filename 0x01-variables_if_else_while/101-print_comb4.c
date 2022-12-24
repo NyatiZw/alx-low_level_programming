@@ -11,22 +11,15 @@
 
 int main(void)
 {
-	int i = 0, j, k;
 	int num[4];
 
-	for (i = '0'; i < 8; i++)
+	int a = 0, b = 1, c = 2;
+
+	while ((num[a] <= 7) || (num[b] <= 8) || (num[c] <= 9)) 
 	{
-		for (int i = 0; i < 9; j++)
-		{
-			for (int k = j + 1; k < 9; k++)
-			{
-				num[0] = i + '0';
-				num[1] = j + '0';
-				num[2] = k + '0';
-				num [3]= '\0';
-				putchar(num);
-			}
-		}
+		putchar(num);
+		a != 9 ? ++c : (b != 8 ? (++b, c = b + 1) : (++num, b = num + 1, c = b + 1));
 	}
-	putchar('\n');
+
+	return (0);
 }
