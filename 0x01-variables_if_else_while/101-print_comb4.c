@@ -23,13 +23,13 @@ int main(void)
 				putchar(b % 10 + '0');
 				putchar(c % 10 + '0');
 				c++;
-				putchar(',');
-				putchar(' ');
 			}
 			b++;
 		}
 		if (a == 7 && b == 8 && c == 9)
 		continue;
+		putchar(',');
+		putchar(' ');
 		a++;
 	}
 	putchar('\n');
