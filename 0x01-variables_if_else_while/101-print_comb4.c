@@ -11,14 +11,17 @@
 
 int main(void)
 {
-	int num[4];
-
+	int num[];
 	int a = 0, b = 1, c = 2;
 
 	while ((num[a] <= 7) || (num[b] <= 8) || (num[c] <= 9)) 
 	{
-		putchar(num);
-		a != 9 ? ++c : (b != 8 ? (++b, c = b + 1) : (++num, b = num + 1, c = b + 1));
+		num[c] != 9 ? ++num[c] : (num[b] != 8 ? (++num[b], num[c] = num[b] + 1) : (++num[a], num[b] = num[a] + 1, num[c] = num[b] + 1));
+
+		putchar(num[a]);
+		putchar(num[b]);
+		putchar(num[c]);
+		putchar('\0');
 	}
 
 	return (0);
