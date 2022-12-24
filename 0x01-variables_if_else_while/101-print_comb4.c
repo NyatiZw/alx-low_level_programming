@@ -12,7 +12,7 @@
 int main(void)
 {
 	int i = 0, j, k;
-	int num[];
+	int num[4];
 
 	for (i = '0'; i < 8; i++)
 	{
