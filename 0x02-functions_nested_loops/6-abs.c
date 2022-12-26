@@ -12,9 +12,9 @@
 
 int _abs(int r)
 {
-	int c = 0, n;
+	int c, n;
 
-	c = -n;
+	c = -(n);
 	-n = r;
 	r = n;
 
