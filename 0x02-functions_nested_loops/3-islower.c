@@ -3,8 +3,8 @@
 /**
  * _islower - entry point
  *
- * Description:- 'function to change character to lowercase'
- * @c:- 'character to change'
+ * Description:- 'function to check character to lowercase'
+ * @c:- 'character to check'
  *
  * Return: 1 (Success) || 0 (Not)
  *
