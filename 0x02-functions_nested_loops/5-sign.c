@@ -1,11 +1,12 @@
 # include "main.h"
+
 /**
- * print_sign: Entry point
+ * print_sign- entry point
  *
- * Description:- 'function to print the sign of a number'
+ * Description:- 'Function that prints the sign of a number'
+ * @n: number to be checked
  *
- * Return: -1 0 1
- *
+ * Return: 1 0 1
  */
 
 int print_sign(int n)
@@ -22,8 +23,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar('-');
-		_putchar('1');
+		_putchar('-1');
 		return (-1);
 	}
 }
