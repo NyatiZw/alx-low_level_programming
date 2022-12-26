@@ -12,9 +12,11 @@
 
 int _abs(int r)
 {
-	int c = r, n;
+	int c = 0, n;
 
-	n = _abs(c);
+	c = -n;
+	-n = r;
+	r = n;
 
 	_putchar(n);
 	_putchar('\n');
