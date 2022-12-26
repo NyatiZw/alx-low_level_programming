@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
  * _abs- entry point
@@ -12,14 +12,13 @@
 
 int _abs(int r)
 {
-	int c, n;
-
-	c = n;
-	n = r;
-	r = n;
-
-	_putchar(n);
-	_putchar('\n');
-
+	if (r < 0)
+	{
+		r = (-1) * r;
+	}
+	else
+	{
+		_putchar(r);
+	}
 	return (0);
 }
