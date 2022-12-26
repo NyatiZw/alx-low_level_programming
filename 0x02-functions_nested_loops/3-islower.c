@@ -18,6 +18,6 @@ int _islower(int c)
 		_putchar(1);
 	}
 	else
-		_putchar(0);
-	return (_islower);
+	_putchar(0);
+	return (c);
 }
