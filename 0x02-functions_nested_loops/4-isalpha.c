@@ -1,20 +1,19 @@
-# include "main.h"
+#include "main.h"
+#include <ctype.h>
 
 /**
- * int _isalpha (int c) - entry point
+ * _islower - entry point
  *
- * description: 'function _islower()'
+ * Description:- 'function to check character to lowercase'
+ * @c:- 'character to check'
  *
- * Return: 1 (Success) || 0 (Not)
+ * Return: 1 (Success)
  *
  */
 
-int _isalpha(int c)
+int _islower(int c)
 {
-
-	if(_isalpha(c) >= 'a' && c <= 'z')
-	{
-	_putchar('1');
-	} else _putchar('0');
-	return (1);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }
