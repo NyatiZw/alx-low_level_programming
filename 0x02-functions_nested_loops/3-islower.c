@@ -1,7 +1,6 @@
 #include "main.h"
 #include <ctype.h>
 
-int _putchar(void);
 /**
  * _islower - entry point
  *
