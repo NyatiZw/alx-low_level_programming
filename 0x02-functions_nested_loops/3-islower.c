@@ -7,13 +7,13 @@
  * Description:- 'function to check character to lowercase'
  * @c:- 'character to check'
  *
- * Return: 1 (Success) || 0 (Not)
+ * Return: 1 (Success)
  *
  */
 
 int _islower(int c)
 {
-	if (c == 'a' && c == 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		_putchar(1);
 	}
