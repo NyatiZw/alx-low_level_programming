@@ -1,6 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 
+_putchar();
 /**
  * _islower - entry point
  *
@@ -19,5 +20,5 @@ int _islower(int c)
 	}
 	else
 		_putchar(0);
-	return (EOF);
+	return (1);
 }
