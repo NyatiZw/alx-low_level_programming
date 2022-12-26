@@ -6,12 +6,12 @@
  * Description:- 'Function that prints the sign of a number'
  * @n: number to be checked
  *
- * Return: 1 0 1
+ * Return: 1 0 -1
  */
 
 int print_sign(int n)
 {
-	if (n >= 0)
+	if (n > 0)
 	{
 		return (1);
 		_putchar('+');
@@ -25,6 +25,5 @@ int print_sign(int n)
 	{
 		return (-1);
 		_putchar('-');
-		_putchar('1');
 	}
 }
