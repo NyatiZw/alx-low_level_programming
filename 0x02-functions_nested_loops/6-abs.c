@@ -14,8 +14,8 @@ int _abs(int r)
 {
 	int c, n;
 
-	c = -(n);
-	-n = r;
+	c = n;
+	n = r;
 	r = n;
 
 	_putchar(n);
