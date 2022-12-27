@@ -4,7 +4,7 @@
  * print_last_digit - entry point
  *
  * Description:- " c functions & nested loops"
- * @int:- intrger value
+ * @num:- intrger value
  *
  * Return: Always 0 (Success)
  *
