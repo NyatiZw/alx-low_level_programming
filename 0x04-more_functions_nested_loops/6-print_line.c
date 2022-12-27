@@ -12,7 +12,7 @@ void print_line(int n)
 	int c = '_';
 	int sp = ' ';
 
-	for (n = 0; n <= n; n++)
+	for (n = n; n <= n; n++)
 	{
 		if (n < 0)
 		{
