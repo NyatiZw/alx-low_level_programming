@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
  * print_most_numbers- entry point
@@ -10,10 +10,10 @@
  * Return: void
  */
 
-void print_most_numbers(void)
+void print_most_numbers(int)
 {
 	int i;
-	char x = x;
+	int x = x;
 
 	for (i = 0; i <= 9; i++)
 	{
