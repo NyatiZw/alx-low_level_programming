@@ -3,7 +3,9 @@
 /**
  * add - function to display times table
  *
- * Descriotion:- 'num 1 and num2 used as intergers to add function'
+ * Description:- 'num 1 and num2 used as intergers to add function'
+ * @num1:- integer to add
+ * @num2:- integer to add
  *
  * Return: times table
  *
