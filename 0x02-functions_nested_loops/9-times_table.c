@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
  * times_table - function to display times table
@@ -10,7 +10,6 @@
 
 
 void times_table(void)
-
 {
 	int r, c, d;
 
@@ -19,8 +18,7 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-	}
-	for (c = 1; c <= 9; c++)
+		for (c = 1; c <= 9; c++)
 		{
 			d = (r * c);
 				if ((d / 10) > 0)
@@ -40,4 +38,5 @@ void times_table(void)
 					}
 					_putchar('\n');
 		}
+	}
 }
