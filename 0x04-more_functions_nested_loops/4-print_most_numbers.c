@@ -3,7 +3,7 @@
 /**
  * print_most_numbers- entry point
  *
- * Description:- function to print numbers from 0-9
+ * Description: function to print numbers from 0-9
  *
  * @ _putchar: is used to print on stdout
  *
@@ -13,7 +13,7 @@
 void print_most_numbers(void)
 {
 	int i;
-	int x = x;
+	char x = x;
 
 	for (i = 0; i <= 9; i++)
 	{
