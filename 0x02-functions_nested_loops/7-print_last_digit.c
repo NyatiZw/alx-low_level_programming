@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
  * print_last_digit - entry point
@@ -13,5 +13,6 @@
 int print_last_digit(int num)
 {
 	num = num % 10;
+	_putchar(num);
 	return (num);
 }
