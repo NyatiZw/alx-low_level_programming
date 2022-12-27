@@ -4,14 +4,16 @@
  * print_last_digit - entry point
  *
  * Description:- " c functions & nested loops"
- * @num:- intrger value
+ * @int:- intrger value
  *
  * Return: Always 0 (Success)
  *
  */
 
-int print_last_digit(int num)
+int print_last_digit(int)
 {
-	num = 2 *(num % 10);
+	int num;
+
+	num = (num % 10);
 	return (num);
 }
