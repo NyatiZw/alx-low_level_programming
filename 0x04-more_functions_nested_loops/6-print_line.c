@@ -2,7 +2,7 @@
 /**
  * print_line- function to print a line
  *
- * @n: integer value
+ * @int: integer value
  *
  * Return: void
  */
