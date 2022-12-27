@@ -10,8 +10,7 @@
  *
  */
 
-int print_last_digit(int num)
+int print_last_digit(int)
 {
-	int num = 0;
 	return (num % 10);
 }
