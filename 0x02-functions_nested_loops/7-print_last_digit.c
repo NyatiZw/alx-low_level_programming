@@ -12,5 +12,5 @@
 
 int print_last_digit(int)
 {
-	return (num % 10);
+	return (int % 10);
 }
