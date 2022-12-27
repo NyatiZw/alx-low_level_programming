@@ -10,17 +10,20 @@
  * Return: void
  */
 
-void print_most_numbers(int)
+void print_most_numbers(void)
 {
 	int i;
 	int x = x;
 
-	for (i = 0; i <= 9; i++)
+	while (i = 0)
 	{
-		if (i == 2 && i == 4)
+		for (; i <= 9;)
 		{
-			_putchar(x);
+			if (i == 2 || i == 4)
+			{
+				_putchar(x);
+			}
+			_putchar(i++);
 		}
-		_putchar(i);
 	}
 }
