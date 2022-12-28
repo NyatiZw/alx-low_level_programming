@@ -11,21 +11,30 @@
 
 void print_diagonal(int n)
 {
-	int i, j;
+	int i, k, j = 1;
+	char l = '\';
 
-	for (i = 1; i < n; i++)
+	for (i = 1; n <= (2 * n) - 1; i++)
 	{
-		for (j = 1; j < n; j++)
+		for (j = 1; j <= (2 * n) - 1; j++)
 		{
-			if (j == i)
+			if (i == j || i + j == 2 * n)
 			{
-				_putchar('\');
+				_putchar(l);
 			}
 			else
 			{
-				_putchar('\n');
+				_putchar(' ');
 			}
 		}
+		if (i < n)
+		{
+			k++;
+		}
+		else
+		{
+			k--;
+			_putchar('\n');
+		}
 	}
-	return (print_diagonal);
 }
