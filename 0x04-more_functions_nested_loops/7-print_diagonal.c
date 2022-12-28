@@ -11,15 +11,20 @@
 
 void print_diagonal(int n)
 {
-	int i, size;
-	int n = '\';
+	char line = '\';
 
-	for (i = 0; n < size; i++)
+	for (int i = 0; i < n; i++)
 	{
-		if (size = 0)
+		for (int j = 0; j < n; j++)
 		{
-			_putchar('\n');
+			if (j == i)
+			{
+				_putchar(line);
+			}
+			else
+			{
+				_putchar('\n');
+			}
 		}
 	}
-	_putchar(n);
 }
