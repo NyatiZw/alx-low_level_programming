@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main: Entry point
+ * main- Entry point
  *
  * Description:- ' Function to print numbers 1 - 100'
  *
- * Return- Void
+ * Return: Always 0
  */
 
-int main()
+int main(void)
 {
 	int i = 0;
 
-	while(i <= 100)
+	while (i <= 100)
 	{
 		if (i % 15 == 0)
 		{
