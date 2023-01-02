@@ -22,8 +22,8 @@ char *_strncat(char *str1, char *str2, int n)
 	for (j = 0; str2[j] != '\0' && j < n; j++)
 	{
 		str1[i + j] = str2[j];
+		str1[i + j] = '\0';
 	}
-	str1[i + j] = '\0';
 
 	return (str1);
 }
