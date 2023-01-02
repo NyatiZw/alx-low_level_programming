@@ -6,7 +6,6 @@
  * Description:- 'Function to copy a string'
  * @dest: destination string
  * @src: source string
- * @n: integer value
  *
  * Return: 0 (Success)
  */
