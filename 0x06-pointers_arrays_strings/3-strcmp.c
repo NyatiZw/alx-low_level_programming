@@ -3,7 +3,7 @@
 /**
  * _strcmp- Entry Point
  *
- * Description:- ' Function that compares two strings
+ * Description:- ' Function that compares two strings'
  * @s1: string destination
  * @s2: string source
  *
