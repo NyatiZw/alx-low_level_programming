@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	for (i = 0; *accept++;)
 	{
-		*s = i++;
+		s = i++;
 	}
 
 	return (i);
