@@ -12,12 +12,14 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	for (*s = 0; *accept;)
+	for (*s = 0; *s == *accept;)
 	{
-		if (*s <= *accept)
+		if (*s == *accept)
 		{
-			return ('\0');
+			return (*s + *accept);
 		}
+		return ('\0');
+		accept++;
 	}
 	return (*s);
 }
