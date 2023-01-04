@@ -12,10 +12,9 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	for (*s = 0; *accept;)
+	if (*s == *accept)
 	{
-		s++;
+		return(*s);
 	}
-
 	return (0);
 }
