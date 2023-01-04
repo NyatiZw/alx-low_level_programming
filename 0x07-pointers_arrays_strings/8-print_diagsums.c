@@ -1,6 +1,14 @@
 #include <stdio.h>
 
-void print_diagsums()
+/** 
+ * print_diagsums- Entry point
+ * Description:- 'function that prints the sum of two diagonals of a square'
+ *
+ * @a:- values to be added
+ * @size:- size of square
+ */
+
+void print_diagsums(void)
 {
 	int *a, i, j, sum1, sum2, size;
 
