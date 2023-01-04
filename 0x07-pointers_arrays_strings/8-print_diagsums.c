@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
  * print_diagsums- Entry point
  * Description:- 'function that prints the sum of two diagonals of a square'
  *
@@ -8,9 +8,9 @@
  * @size:- size of square
  */
 
-void print_diagsums(void)
+void print_diagsums(int *a, int size)
 {
-	int *a, i, j, sum1, sum2, size;
+	int i, j, sum1, sum2;
 
 	a = 0;
 	size = 0;
