@@ -17,11 +17,11 @@ int _strlen_recursion(char *s)
 	{
 		return ('\0');
 	}
-	if (i <= *s)
+	if (i <= s)
 	{
 		i++;
 		_putchar(*s);
 	}
 	_putchar(*s);
-	return (_strlen_recursion(*s + 1));
+	return (_strlen_recursion(s + 1));
 }
