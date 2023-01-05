@@ -20,5 +20,5 @@ int factorial(int n)
 	i = factorial(n - 1);
 	_putchar('n');
 
-	return (factorial);
+	return (n);
 }
