@@ -19,15 +19,9 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	if (n % i == 0)
+	if (n % m == 0)
 	{
-		res = 1;
 		return (0);
 	}
-	if (i == 2)
-	{
-		i <= m;
-		i++;
-	}
-	return (n);
+	return (is_prime_number(n));
 }
