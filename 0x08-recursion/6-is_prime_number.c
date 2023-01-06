@@ -15,11 +15,11 @@ int is_prime_number(int n)
 
 	m = n / x;
 
-	if (x == 1 && x == n)
+	if (n % m != 0)
 	{
 		return (1);
 	}
-	if (n % m != 0)
+	if (x == 1 && x == n)
 	{
 		return (0);
 	}
