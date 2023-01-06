@@ -21,7 +21,7 @@ int is_prime_number(int n)
 	}
 	if (res != 0)
 	{
-		reeturn (0);
+		return (0);
 	}
 	if (n % m == 0)
 	{
