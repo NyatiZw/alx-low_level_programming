@@ -18,6 +18,6 @@ int _strlen_recursion(char *s)
 		i++;
 		return _putchar(*s);
 	}
-	_putchar(s);
+	_putchar(i);
 	return (_strlen_recursion(s + 1));
 }
