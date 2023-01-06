@@ -19,6 +19,10 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
+	if (res != 0)
+	{
+		reeturn (0);
+	}
 	if (n % m == 0)
 	{
 		return (0);
