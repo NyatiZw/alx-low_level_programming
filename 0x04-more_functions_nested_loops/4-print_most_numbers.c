@@ -13,6 +13,7 @@
 void print_most_numbers(void)
 {
 	int i;
+	char x = x;
 
 	while (i <= 9)
 	{
@@ -20,7 +21,7 @@ void print_most_numbers(void)
 		{
 			if (i == 2 || i == 4)
 			{
-				_putchar(i + '0');
+				_putchar(i + x);
 			}
 		}
 	}
