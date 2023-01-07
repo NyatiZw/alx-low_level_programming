@@ -12,13 +12,15 @@
 
 int print_last_digit(int num)
 {
-	while (num = num % 10)
+	int digi;
+
+	while (digi = num % 10)
 	{
-		if (num < 0)
+		if (digi < 0)
 		{
-			num = num * -1;
+			digi = num * -1;
 		}
-		_putchar(num + '0');
+		_putchar(digi + '0');
 	}
-	return (num);
+	return (digi);
 }
