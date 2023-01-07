@@ -19,7 +19,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	else if (m == 1)
+	else if (m <= 1)
 	{
 		return (0);
 	}
