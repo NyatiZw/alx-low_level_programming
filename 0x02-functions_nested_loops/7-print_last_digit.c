@@ -15,8 +15,8 @@ int print_last_digit(int num)
 	while (num % 10)
 	{
 		for (; num <= '\0';)
-		_putchar(num);
-		_putchar(num);
 	}
+	_putchar(num);
+	_putchar(num);
 	return (num++);
 }
