@@ -15,7 +15,7 @@ int is_prime_number(int n)
 
 	m = n / n;
 
-	if (m <= 0 || n <= m)
+	if (m <= 0 || m <= 0)
 	{
 		return (1);
 	}
