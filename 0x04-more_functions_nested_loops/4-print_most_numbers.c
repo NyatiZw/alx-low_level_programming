@@ -21,11 +21,10 @@ void print_most_numbers(void)
 		{
 			if (i == 2 || i == 4)
 			{
-				break;
+				continue;
 				_putchar(i + x);
 			}
 		}
-		continue;
 	}
 	_putchar('\n');
 }
