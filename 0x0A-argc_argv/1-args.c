@@ -16,10 +16,9 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (*argv[i] > 0)
+	if (*argv[i] > 0)
 	{
 		printf("%d\n", argc);
-		i++;
 	}
 	return (0);
 }
