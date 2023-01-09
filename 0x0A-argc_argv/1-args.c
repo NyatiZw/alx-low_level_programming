@@ -16,9 +16,12 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 0; i < argc; i++)
+	while (*argv[1] < 0)
 	{
-		printf("%s\n", argv[i]);
+		for (i = 0; i < argc; i++)
+		{
+			printf("%2d\n", i);
+		}
 	}
 	return (0);
 }
