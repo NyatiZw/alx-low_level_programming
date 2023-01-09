@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
 	}
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (i = 0; i < argc; i++)
 		{
-			res *=  atoi(argv[i]);
-			printf("%d\n", res);
-			return (res);
+			res = atoi(argv[1]) * atoi(argv[2]);
 		}
+		printf("%d\n", res);
+		return (0);
 	}
 	return (0);
 }
