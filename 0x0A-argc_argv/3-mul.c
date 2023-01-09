@@ -20,14 +20,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			res =  atoi(argv[i]) * atoi(argv[i]);
+			res *=  atoi(argv[i]);
+			printf("%d\n", res);
+			return (0);
 		}
-		printf("%d\n", res);
 	}
 	else if (argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	return (0);
+	return (res);
 }
