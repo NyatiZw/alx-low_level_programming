@@ -14,15 +14,19 @@
 
 int main(int argc, char *argv[])
 {
-	int a = 0, b, res;
+	int i, res = 0;
 
-	if (a * b)
+	if (argc > 1)
 	{
-		printf("%d * %d = %d\n", a, b, res);
+		for (i = 1; i < argc; i++)
+		{
+			res =  atoi(argv[i]) * atoi(argv[i]);
+		}
+		printf("%d\n", res);
 	}
-	else
+	else if (argc > 2)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	return (0);
