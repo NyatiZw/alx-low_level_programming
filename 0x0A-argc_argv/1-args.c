@@ -16,12 +16,10 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	while (*argv[1] < 0)
+	printf("argc = %d\n", argc);
+	for (i = 0; i < *argv[i]; i++)
 	{
-		for (i = 0; i < argc; i++)
-		{
-			printf("%2d\n", i);
-		}
+		printf("argv[%d] = %s\n", i, argv[i]);
 	}
 	return (0);
 }
