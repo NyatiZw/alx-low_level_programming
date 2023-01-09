@@ -16,17 +16,17 @@ int main(int argc, char *argv[])
 {
 	int i, res = 0;
 
-	if (argc <= 0)
-	{
-		printf("%d\n", 0);
-	}
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
 			res += atoi(argv[i]);
 		}
-		printf("%d\n", res);
 	}
+	if (argc < 1)
+	{
+		putchar('\0');
+	}
+	printf("%d\n", res);
 	return (0);
 }
