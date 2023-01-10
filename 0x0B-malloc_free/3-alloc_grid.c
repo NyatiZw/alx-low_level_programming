@@ -14,20 +14,22 @@
 
 int **alloc_grid(int width, int height)
 {
-	unsigned int i;
+	int i, j;
 	char *a;
 
-	a = malloc((size) * sizeof(char));
-	if (size == 0)
+	a = malloc((width) * sizeof(height));
+	if (a  == 0)
 	{
 		return (NULL);
 	}
-	i = 0;
-	while (i < size)
+
+	for (i = 0; i <= witdh; i++)
 	{
-		a[i] = c;
-		i++;
+		for (j = 0; j <= height; j++)
+		{
+			_putchar(a[width][height]);
+		}
+		_putchar('\0');
 	}
-	a[i] = '\0';
 	return (a);
 }
