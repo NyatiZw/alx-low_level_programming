@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	{
 		if (i % 10)
 		{
-			malloc(sizeof(c[i]));
+			malloc(sizeof(c));
 			_putchar(c);
 		}
 		i++;
