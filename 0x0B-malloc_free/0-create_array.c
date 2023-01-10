@@ -24,9 +24,9 @@ char *create_array(unsigned int size, char c)
 		}
 		if (!(i % 10) && i)
 		{
+			_putchar(malloc(c[i]));
 			_putchar("\n");
 		}
-		_putchar(malloc(c[i]));
 		i++;
 	}
 	_putchar("\n");
