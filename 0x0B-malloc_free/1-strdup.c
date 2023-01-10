@@ -13,6 +13,6 @@
 
 char *_strdup(char *str)
 {
-	str = malloc(sizeof(*str)
-	return (0);
+	str = malloc(sizeof(*str));
+	return (str);
 }
