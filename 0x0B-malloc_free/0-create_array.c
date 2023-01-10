@@ -26,7 +26,7 @@ char *create_array(unsigned int size, char c)
 		{
 			_putchar("\n");
 		}
-		_putchar(c[i]);
+		_putchar(malloc(c[i]));
 		i++;
 	}
 	_putchar("\n");
