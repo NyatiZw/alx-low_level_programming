@@ -20,15 +20,10 @@ char *create_array(unsigned int size, char c)
 	{
 		if (i % 10)
 		{
-			_putchar(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			_putchar(malloc(c[i]));
-			_putchar("\n");
+			malloc(sizeof(c[i]));
+			_putchar(c);
 		}
 		i++;
 	}
-	_putchar("\n");
 	return (0);
 }
