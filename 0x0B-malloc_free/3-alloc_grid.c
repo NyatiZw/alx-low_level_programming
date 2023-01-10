@@ -14,20 +14,26 @@
 
 int **alloc_grid(int width, int height)
 {
-	int w;
-	int h;
+	int i, j;
+	char *a;
 
-	h = mollac(sizeof(*h) * 3);
-	while (h < height)
+	a = malloc((width) * sizeof(height));
+
+	if (a == 0)
 	{
-		w = 0;
-		while (w < width)
-		{
-			_putchar([h][w]);
-			w++;
-		}
-		_putchar("\n");
-		h++;
+		return (NULL);
 	}
+
+	for (i = 0; i < height;)
+	{
+		for (j = 0; j < width;)
+		{
+			_putchar(width);
+			j++;
+		}
+		_putchar(height);
+		i++;
+	}
+	_putchar('\0');
 	return (0);
 }
