@@ -17,13 +17,13 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	char *a;
 
-	a = malloc(sizeof(width * height));
+	a = malloc((width) * sizeof(height));
 	if (a  == 0)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i <= witdh; i++)
+	for (i = 0; i <= width; i++)
 	{
 		for (j = 0; j <= height; j++)
 		{
@@ -31,5 +31,5 @@ int **alloc_grid(int width, int height)
 		}
 		_putchar('\0');
 	}
-	return (a);
+	return (0);
 }
