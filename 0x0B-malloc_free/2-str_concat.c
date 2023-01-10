@@ -3,15 +3,16 @@
 #include <stdio.h>
 
 /**
- * *_strdup- Entry point
+ * *str_concat- Entry point
  *
- * Description:- 'function that returns a pointer to allocated space'
- * @str:- string to copy
+ * Description:- 'function that concatenates two strings'
+ * @s1:- string destination
+ * @s2:- string source
  *
  * Return: 0 (Success)
  */
 
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	str = malloc(sizeof(*str));
 	return (str);
