@@ -18,11 +18,8 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		if (i % 10)
-		{
-			malloc(sizeof(c));
-			_putchar(c);
-		}
+		malloc(sizeof(c));
+		_putchar(c);
 		i++;
 	}
 	return (0);
