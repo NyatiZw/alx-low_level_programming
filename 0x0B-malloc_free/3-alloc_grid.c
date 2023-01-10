@@ -16,15 +16,14 @@ int **alloc_grid(int width, int height)
 {
 	int w;
 	int h;
-	char grid = "0";
 
-	h = 0;
+	h = mollac(sizeof(*h) * 3);
 	while (h < height)
 	{
 		w = 0;
 		while (w < width)
 		{
-			_putchar(grid[h][w]);
+			_putchar([h][w]);
 			w++;
 		}
 		_putchar("\n");
