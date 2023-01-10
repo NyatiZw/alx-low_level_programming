@@ -23,7 +23,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	if (NULL == (a = malloc(size)))
+	if (NULL == (a = malloc(size) * sizeof(char)))
 	{
 		return (NULL);
 	}
