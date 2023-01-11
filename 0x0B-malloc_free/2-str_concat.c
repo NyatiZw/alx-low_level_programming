@@ -30,11 +30,11 @@ char *str_concat(char *s1, char *s2)
 			s1[i] = s2[j];
 			_putchar(*s1);
 			i++;
-			}
+		}
+		return (s);
 	}
-	else
-	{
-		return (" ");
-	}
-	return (s);
+	return (" ");
+	
+	free (s);
+	return (0);
 }
