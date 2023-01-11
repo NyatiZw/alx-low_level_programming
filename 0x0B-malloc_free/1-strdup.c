@@ -23,12 +23,11 @@ char *_strdup(char *str)
 			*str = str[i];
 			i++;
 		}
-		return (str);
 	}
 	else
 	{
 	return (NULL);
 	}
 	free(str);
-	return (0);
+	return (str);
 }
