@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", res);
 	}
 	else if (argc < 1)
 	{
 		putchar ('\0');
 	}
+	printf("%d\n", res);
 
 	return (0);
 }
