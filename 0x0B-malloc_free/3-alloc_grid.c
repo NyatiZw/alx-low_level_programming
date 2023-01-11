@@ -35,5 +35,5 @@ int **alloc_grid(int width, int height)
 		i++;
 	}
 	_putchar('\0');
-	return (0);
+	return (a);
 }
