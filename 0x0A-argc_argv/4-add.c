@@ -21,14 +21,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			res += atoi(argv[i]);
-
 			if (!isdigit(argv[i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+		res += atoi(argv[i]);
 	}
 	else if (argc < 1)
 	{
