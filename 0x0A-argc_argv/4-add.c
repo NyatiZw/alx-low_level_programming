@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 {
 	int i, res = 0;
 
-	if (!isdigit(argv[i]))
+	if (!isdigit(argc[i]))
 	{
 		printf("Error\n");
 
