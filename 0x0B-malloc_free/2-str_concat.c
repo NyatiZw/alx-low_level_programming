@@ -31,10 +31,9 @@ char *str_concat(char *s1, char *s2)
 			_putchar(*s1);
 			i++;
 		}
-		return (s);
 	}
 	return (" ");
 
 	free(s);
-	return (str);
+	return (s);
 }
