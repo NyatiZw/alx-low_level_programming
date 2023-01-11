@@ -39,5 +39,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (" ");
 	}
-	return (0);
+	return (*s);
 }
