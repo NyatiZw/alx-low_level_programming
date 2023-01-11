@@ -24,10 +24,8 @@ char *_strdup(char *str)
 			i++;
 		}
 	}
-	else
-	{
 	return (NULL);
-	}
+	
 	free(str);
 	return (str);
 }
