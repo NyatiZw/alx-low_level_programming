@@ -15,31 +15,26 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0, j;
+	char *a;
 
-	s1 = (sizeof(char) + s2);
+	a = ((s1) * sizeof(char));
 
-	if (s1 == NULL)
+	if (s1 != NULL && s2 != NULL)
+	{
+		while (s1[i] != '\0')
+		{
+			i++;
+		}
+		while (s2[j] != '\0')
+		{
+			j++;
+		}
+		s1[i] = s2[j];
+		_putchar(*s1);
+	}
+	else
 	{
 		return (" ");
 	}
-	if (s2 == NULL)
-	{
-		return (" ");
-	}
-
-	while (s1[i] != '\0')
-	{
-		i++;
-	}
-
-	while (s2[j] != '\0')
-	{
-		i++;
-		j++;
-	}
-
-	s1[i] = s2[j];
-	_putchar(*s1);
-
-	return (0);
+	return (*str_concat);
 }
