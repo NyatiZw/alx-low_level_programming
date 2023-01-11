@@ -15,22 +15,20 @@
 
 int main(int argc, char *argv[])
 {
-	int i, res = 0;
+	int i, j, res = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i]))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+			res += atoi(argv[i]);
+			printf("%d\n", res);
 		}
-		res += atoi(argv[i]);
-		printf("%d\n", res);
-	}
-	
-	if (argc < 1)
-	{
-		putchar ('\0');
 	}
 
 	return (0);
