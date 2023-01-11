@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j;
 	char *a;
 
-	a = ((s1) * sizeof(char));
+	a = (sizeof(char));
 
 	if (s1 != NULL && s2 != NULL)
 	{
@@ -36,5 +36,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (" ");
 	}
-	return (*str_concat);
+	return (*a);
 }
