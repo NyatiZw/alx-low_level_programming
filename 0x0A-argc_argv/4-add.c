@@ -23,19 +23,16 @@ int main(int argc, char *argv[])
 
 		return (1);
 	}
-	else
+	else if (argc > 1)
 	{
-		if (argc > 1)
+		for (i = 1; i < argc; i++)
 		{
-			for (i = 1; i < argc; i++)
-			{
-				res += atoi(argv[i]);
-			}
+			res += atoi(argv[i]);
 		}
-		if (argc < 1)
-		{
-			putchar ('\0');
-		}
+	}
+	else if (argc < 1)
+	{
+		putchar ('\0');
 	}
 
 	printf("%d\n", res);
