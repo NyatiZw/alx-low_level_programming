@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 			}
 			res += atoi(argv[i]);
 		}
+		printf("%d\n", res);
 	}
 	else if (argc < 1)
 	{
 		putchar ('\0');
 	}
-	printf("%d\n", res);
 
 	return (0);
 }
