@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
+			res += atoi(argv[i]);
 		}
-		res += atoi(argv[i]);
 	}
 	else if (argc < 1)
 	{
