@@ -1,28 +1,39 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * *string_nconcat- Entry point
  *
- * Description:- 'Function that concatenates two strings'
- * @s1:- character destination
- * @s2:- character source
- * @n:- bytes to concatenate
+ * Description:-  Function that concatenates two strings
+ * @s1:- string destination
+ * @s2:- string source
+ * @n:- number of bytes to concatenate
  *
- * Return: 0 Success
+ * Return: Always 0
  */
 
-*malloc_checked(unsigned int b)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int *p;
+unsigned int i, j = 0;
+int *ptr;
 
-	p = malloc(sizeof(int));
-	if (p == NULL)
-	{
-		exit(1);
-		return (98);
-	}
-	b = *p;
-	return (*b);
+ptr = malloc(sizeof(int));
+if (ptr == NULL)
+{
+_putchar(0);
 }
+
+i = 0;
+if (s1[i++])
+{
+if (s2[i] && i < n)
+{
+s1[j++] = s2[i];
+}
+return (NULL);
+}
+
+return (s1);
+}
+
