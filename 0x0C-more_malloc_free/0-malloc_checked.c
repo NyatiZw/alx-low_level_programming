@@ -8,19 +8,17 @@
  * Description:- 'Function that allocates memory using malloc'
  * @b:- integer value
  *
- * Return: 0 Success
+ * Return: Void
  */
 
-*malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
-	int i;
+	int *p;
 
-	b = malloc(sizeof(int) * i * b);
-	if (malloc == NULL)
+	p = malloc(sizeof(int));
+	if (p == NULL)
 	{
-		exit(*malloc_checked);
+		exit(1);
 		return (98);
 	}
-	b = *b;
-	return (*b);
 }
