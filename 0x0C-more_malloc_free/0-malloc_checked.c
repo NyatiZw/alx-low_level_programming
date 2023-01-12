@@ -21,6 +21,5 @@ void *malloc_checked(unsigned int b)
 	{
 		exit (1);
 	}
-	return (0);
-
+	return;
 }
