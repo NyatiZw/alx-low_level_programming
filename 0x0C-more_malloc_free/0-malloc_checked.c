@@ -13,10 +13,8 @@
 
 void *malloc_checked(unsigned int b)
 {
-	b = *b;
-
 	b = malloc(sizeof(int));
-	if (b == NULL)
+	if (*b == NULL)
 	{
 		exit(98);
 	}
