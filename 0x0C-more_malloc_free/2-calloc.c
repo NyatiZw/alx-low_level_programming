@@ -15,12 +15,25 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
+	int i;
 
-	p = malloc(nmemb);
-	if (nmemb == 0 || size == 0)
+	p = malloc(nmemb * sizeof(unsigned int));
+	if (p == 0 || size == 0)
 	{
 		return (NULL);
 	}
+	else
+	{
+		for (i = 0; i < nmemb; ++i)
+		{
+			p[i] = i + 1;
+		}
 
-	return (p);
+		for ( i = 0; i < nmemb; ++i)
+		{
+			_putchar(p[i]);
+		}
+	}
+
+	return (0);
 }
