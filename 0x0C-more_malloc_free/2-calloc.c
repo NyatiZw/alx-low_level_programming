@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 			p[i] = i + 1;
 		}
 
-		for ( i = 0; i < n; ++i)
+		for (i = 0; i < n; ++i)
 		{
 			_putchar(i);
 		}
