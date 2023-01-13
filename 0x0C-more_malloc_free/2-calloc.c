@@ -14,8 +14,8 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
-	int i;
+	int *p;
+	int i, n = 0;
 
 	p = malloc(nmemb * sizeof(unsigned int));
 	if (p == 0 || size == 0)
@@ -24,14 +24,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	else
 	{
-		for (i = 0; i < nmemb; ++i)
+		for (i = 0; i < n; ++i)
 		{
 			p[i] = i + 1;
 		}
 
-		for ( i = 0; i < nmemb; ++i)
+		for ( i = 0; i < n; ++i)
 		{
-			_putchar(p[i]);
+			_putchar(i);
 		}
 	}
 
