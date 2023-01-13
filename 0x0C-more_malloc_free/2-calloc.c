@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * *calloc- Entry point
+ * *_calloc- Entry point
  *
  * Description:- 'Function that allocates memory for an array'
  * @nmemb:- array elements
@@ -12,7 +12,7 @@
  * Return: Void
  */
 
-void *calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
 
