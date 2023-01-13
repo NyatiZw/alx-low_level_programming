@@ -19,7 +19,7 @@ void *malloc_checked(unsigned int b)
 
 	if (p == NULL)
 	{
-		exit (1);
+		exit(1);
 	}
 	free(p);
 	return (0);
