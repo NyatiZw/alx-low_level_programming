@@ -46,6 +46,10 @@ int main(int argc, char *argv[])
 		{
 			cents -= 1;
 		}
+		else if (cents < 0)
+		{
+			printf("O\n");
+		}
 		n += 1;
 	}
 	printf("%d\n", n);
