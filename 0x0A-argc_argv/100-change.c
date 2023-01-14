@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	cents = atoi(argv[1]);
 
-	while (cents == 1)
+	while (cents <= 1)
 	{
 		if (cents >= 25)
 		{
