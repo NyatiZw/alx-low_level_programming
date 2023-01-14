@@ -22,29 +22,29 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cents = atoi(argv[1]);
+	cents = atoi(argv + 1);
 
-	while (argv[1] == 1)
+	while (argv + 1 == 1)
 	{
-		if (argv[1] >= 25)
+		if (argv + 1 >= 25)
 		{
-			argv[1] -= 25;
+			argv + 1 -= 25;
 		}
-		else if (argv[1] >= 10)
+		else if (argv + 1 >= 10)
 		{
-			argv[1] -= 10;
+			argv + 1 -= 10;
 		}
-		else if (argv[1] >= 5)
+		else if (argv + 1 >= 5)
 		{
-			argv[1] -= 5;
+			argv + 1 -= 5;
 		}
-		else if (argv[1] >= 2)
+		else if (argv + 1 >= 2)
 		{
-			argv[1] -= 2;
+			argv + 1 -= 2;
 		}
-		else if (argv[1] >= 1)
+		else if (argv + 1 >= 1)
 		{
-			argv[1] -= 1;
+			argv + 1 -= 1;
 		}
 		n += 1;
 	}
