@@ -22,7 +22,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == 0)
 	{
 		exit(1);
-		return (NULL);
 	}
 
 	i = 0;
