@@ -22,33 +22,32 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cents = atoi(argv + 1);
+	cents = atoi(argv[1]);
 
-	while (argv + 1 == 1)
+	while (cents == 1)
 	{
-		if (argv + 1 >= 25)
+		if (cents >= 25)
 		{
-			argv + 1 -= 25;
+			cents -= 25;
 		}
-		else if (argv + 1 >= 10)
+		else if (cents >= 10)
 		{
-			argv + 1 -= 10;
+			cents -= 10;
 		}
-		else if (argv + 1 >= 5)
+		else if (cents >= 5)
 		{
-			argv + 1 -= 5;
+			cents -= 5;
 		}
-		else if (argv + 1 >= 2)
+		else if (cents >= 2)
 		{
-			argv + 1 -= 2;
+			cents -= 2;
 		}
-		else if (argv + 1 >= 1)
+		else if (cents >= 1)
 		{
-			argv + 1 -= 1;
+			cents -= 1;
 		}
 		n += 1;
 	}
 	printf("%d\n", n);
 	return (0);
 }
-
