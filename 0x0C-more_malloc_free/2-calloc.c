@@ -35,5 +35,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		}
 	}
 
-	return (0);
+	return (p);
 }
