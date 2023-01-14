@@ -27,12 +27,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = 0;
 	if (s1[i++])
 	{
-		if (s2[i] && i > n)
+		if (s2[i] && i < n)
 		{
 			s1[j++] = s2[i];
 		}
 		return (NULL);
 	}
 
-	return (s);
+	return (s1);
 }
