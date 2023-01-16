@@ -1,12 +1,12 @@
-#include "dog.h"
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
+#include "dog.h"
 
 /**
- * init_dog - Entry point
+ * init_dog- Entry Point
  *
- * Description:- 'A function that initialize a variable'
+ * Description:- 'Function that initialize a variable'
  * @d:- member
  * @name:- member
  * @age:- member
@@ -24,5 +24,4 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	free(d);
 }
