@@ -14,13 +14,6 @@
  * Return: 0 Success
  */
 
-type struct
-{
-	char name;
-	float age;
-	char owner;
-} dog;
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	d = malloc(sizeof(struct));
@@ -28,4 +21,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
+
+	name = &name;
+	owner = &owner;
 }
