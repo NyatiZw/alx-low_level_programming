@@ -1,28 +1,22 @@
-#include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - Entry point
  *
- * Description:- 'data structures'
- * @owner:- member
- * @name:- member
+ * Description:- 'A collection to describe dog'
+ * @name:- mamber
  * @age:- member
+ * @owner:- member
  *
  * Return: 0 Success
  */
 
-int main () 
+struct dog
 {
-	{
-		struct dog
-		{
-			char *name;
-			float age;
-			char *owner;
-		};
-	}
+	char *name;
+	float age;
+	char *owner;
+};
 
-	return (0);
-}
+#endif /* DOG_H */
