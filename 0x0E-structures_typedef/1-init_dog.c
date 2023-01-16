@@ -21,8 +21,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	struct dog *d = &d;
 	*name = &name;
-	age = age.i;
+	age = age[i];
 	*owner = &owner;
-
-	return (init_dog);
 }
