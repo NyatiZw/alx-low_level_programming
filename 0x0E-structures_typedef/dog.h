@@ -1,5 +1,5 @@
-#ifndef _DOG_H
-#define _DOG_H
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog- Entry Point
@@ -12,11 +12,11 @@
  * Return: 0
  */
 
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
 
-#endif /* _DOG_H */
+#endif /* DOG_H */
