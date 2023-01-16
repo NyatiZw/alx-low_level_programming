@@ -14,10 +14,5 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	while (d != 0)
-	{
-		name-> *name = &name;
-		age->age = &age;
-		owner-> *owner = &owner;
-	}
+	struct dog *d = &d;
 }
