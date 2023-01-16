@@ -18,4 +18,11 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog d = &d;
+
+	d = malloc(sizeof(struct));
+	if (d == NULL)
+	{
+		return (NULL);
+	}
+	free(d);
 }
