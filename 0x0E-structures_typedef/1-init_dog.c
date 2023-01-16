@@ -1,27 +1,25 @@
-#include "main.h"
+#include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
  * init_dog- Entry Point
  *
- * Description:- 'Function that initialize a variable'
+ * Description:- 'Function that initializes a variable'
  * @d:- member
  * @name:- member
  * @age:- member
  * @owner:- member
  *
- * Return: 0 Success
+ * Return: Void
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d = malloc(sizeof(struct));
-	if (d == NULL)
+	if (d)
 	{
-		return (NULL);
+		name -> &name;
+		age -> &age;
+		owner -> &owner;
 	}
-
-	name = &name;
-	owner = &owner;
 }

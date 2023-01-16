@@ -1,1 +1,1 @@
-Task on struct
+Task on struct and typedef
