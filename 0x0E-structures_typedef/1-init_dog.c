@@ -1,7 +1,6 @@
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
-#include "dog.h"
 
 /**
  * init_dog- Entry Point
@@ -17,11 +16,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog d = &d;
-
-	d = malloc(sizeof(struct));
-	if (d == NULL)
+	typedef struct
 	{
-		return (NULL);
-	}
+		char name;
+		float age;
+		char owner;
+	} dog;
 }
