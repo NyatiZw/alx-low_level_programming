@@ -13,8 +13,16 @@
  * Return: 0 Success
  */
 
-struct dog {
-	char *name;
-	int float age;
-	char *owner;
-};
+int main () 
+{
+	{
+		struct dog
+		{
+			char *name;
+			float age;
+			char *owner;
+		};
+	}
+
+	return (0);
+}
