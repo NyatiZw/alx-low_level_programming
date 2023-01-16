@@ -7,7 +7,7 @@
  * init_dog - Entry point
  *
  * Description:- 'A function that initialize a variable'
- * @d:- mamber
+ * @d:- member
  * @name:- member
  * @age:- member
  * @owner:- member
@@ -15,7 +15,7 @@
  * Return: 0 Success
  */
 
-void init_dog (struct dog *d, char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	int i = 0;
 
@@ -23,6 +23,4 @@ void init_dog (struct dog *d, char *name, float age, char *owner)
 	*name = &name;
 	age = age.i;
 	*owner = &owner;
-
-	return (0);
 }
