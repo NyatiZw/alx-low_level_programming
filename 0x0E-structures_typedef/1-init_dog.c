@@ -17,11 +17,8 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *d = &d;
-
+	d = &d;
 	name = &name;
-	age = *age;
+	age = 0;
 	owner = &owner;
-
-	return (struct dog);
 }
