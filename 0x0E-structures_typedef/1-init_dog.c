@@ -14,12 +14,18 @@
  * Return: 0 Success
  */
 
+type struct
+{
+	char name;
+	float age;
+	char owner;
+} dog;
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	typedef struct
+	d = malloc(sizeof(struct));
+	if (d == NULL)
 	{
-		char name;
-		float age;
-		char owner;
-	} dog;
+		return (NULL);
+	}
 }
