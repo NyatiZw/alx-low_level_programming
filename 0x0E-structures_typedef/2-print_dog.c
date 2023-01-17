@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_dog- Entry Point
@@ -14,26 +15,21 @@ void print_dog(struct dog *d)
 {
 	if (d)
 	{
-		printf("Name: %s\n", d.name);
-		printf("Age: %d\n", d.age);
-		printff("Owner: %s\n", d.owner);
+		printf("Name: %s\n", d->name);
+		printf("Age: %f\n", d->age);
+		printf("Owner: %s\n", d->owner);
 	}
 	else if (d == NULL)
 	{
-		printf("");
+		printf(" ");
 	}
 	
-	if (d.name == NULL)
+	if (d->name == NULL)
 	{
 		printf("nil");
 	}
 	
-	if (d.age == NULL)
-	{
-		printf("nil");
-	}
-
-	if (d.owner == NULL)
+	if (d->owner == NULL)
 	{
 		printf("nil");
 	}
