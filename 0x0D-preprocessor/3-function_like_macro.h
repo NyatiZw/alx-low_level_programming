@@ -9,7 +9,7 @@
 
 int ABS(int X)
 {
-	return ((X < 0) ? (-X) : (X));
+	return ((X < 0) ? -(X) : (X));
 }
 
 #endif /* ABS(X) */
