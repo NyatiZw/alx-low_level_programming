@@ -16,7 +16,7 @@ void free_dog(dog_t *d)
 	d = malloc(sizeof(dog_t));
 	if (d)
 	{
-		free(d.name && d.owner);
+		free(d->name && d->owner);
 		free(d);
 	}
 }

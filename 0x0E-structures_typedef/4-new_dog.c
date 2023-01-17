@@ -1,6 +1,4 @@
 #include "dog.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * *new_dog- Entry Point
@@ -15,13 +13,19 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	typedef struct dog_t = *new_dog;
-
-	new_dog = malloc(sizeof(dog_t));
-	if (new_dog != NULL)
+	typedef struct dog_t;
+	func(dog_t new_dog)
 	{
-		strncpy(&name = name);
-		strncpy(&owner = owner);
+		struct dog_t;
+		dog_t = malloc(sizeof(new_dog));
+		if (new_dog == NULL)
+		{
+			return (NULL);
+		}
+		strncpy(name->&name);
+		strncpy(owner->&owner);
+
+		free(new_dog);
 	}
-	return (NULL);
+		return (new_dog);
 }
