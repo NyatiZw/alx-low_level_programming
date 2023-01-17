@@ -13,8 +13,6 @@
 
 void print_dog(struct dog *d)
 {
-	int i;
-
 	if (d)
 	{
 		printf("Name: %s\n", d->name);
