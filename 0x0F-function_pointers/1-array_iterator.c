@@ -15,13 +15,9 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i = 0;
-	int n = sizeof(array)/sizeof(array[0]);
 
-	for (i = 0; i < n; i++)
+	if (size == sizeof(array[0]))
 	{
-		if (size == sizeof(array[0]))
-		{
-			action(i);
-		}
+		action(i);
 	}
 }
