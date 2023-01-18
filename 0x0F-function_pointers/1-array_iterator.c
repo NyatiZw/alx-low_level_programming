@@ -14,18 +14,19 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i, pass, temp;
-	
-	for (pass = 1; pass < size; pass++)
+	int i, j, temp;
+
+	for (i = 0; i < size; i++)
 	{
-		for (i = 0; i < size - 1; i++)
+		for (j = 0; j < size - 1; j++)
 		{
-			if ((*action)(array[1], array[i + 1]))
+			if (array[j] < array[j + 1])
 			{
-				temp = array[i];
-				array[i] = array[i + 1];
-				array[i + 1] = temp;
+				temp = array[j];
+				array[j] = array[j + 1];
+				array[j + 1] = temp;
 			}
 		}
+		action(size);
 	}
 }
