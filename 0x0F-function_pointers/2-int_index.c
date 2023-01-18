@@ -15,13 +15,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size[i]; i++)
 	{
-		if (array[i] > array[i + 1])
+		if (size <= 0 && size[i] <= 0)
 		{
-			cmp = array[i];
-			array[i] = array[i + 1];
-			array[i + 1] = cmp;
+			return (-1);
 		}
-	}
+		cmp(int_index);
+
+		return (0);
 }
