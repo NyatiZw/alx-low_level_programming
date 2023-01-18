@@ -8,7 +8,7 @@
  * @size:- member
  * @cmp:- member
  *
- * Return: Void
+ * Return: 0 (Success)
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -17,11 +17,11 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size[i]; i++)
 	{
-		if (size <= 0 && size[i] <= 0)
+		if (size <= 0 && array[i] <= 0)
 		{
 			return (-1);
 		}
-		cmp(int_index);
+		cmp(array[i]);
 
 		return (0);
 }
