@@ -13,10 +13,15 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, x;
+	int i;
 
 	if (size == sizeof(array[0]))
 	{
-		cmp(int_index);
+		for (i = 0; i <= size - 1; i++)
+		{
+			_putchar(i);
+		}
 	}
+		cmp(i);
+		return (0);
 }
