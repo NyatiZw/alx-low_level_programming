@@ -14,10 +14,11 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	int n = sizeof(array)/sizeof(array[0]), i;
 
-	if (size = array[i])
+	for (i = 0; i < n; i++)
 	{
-		action(array[i]);
+		_putchar(i);
 	}
+	action(array[i]);
 }
