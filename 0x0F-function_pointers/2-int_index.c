@@ -19,9 +19,13 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		for (i = 0; i <= size - 1; i++)
 		{
-			_putchar(i);
+			if (size <= 0 && array[i++] == 0)
+			{
+				return (-1);
+			}
+			cmp(array[i]);
 		}
 	}
-		cmp(i);
-		return (0);
+
+	return (0);
 }
