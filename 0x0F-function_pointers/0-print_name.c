@@ -5,21 +5,15 @@
  *
  * Description:- 'Function that prints a name'
  * @name:- member
- * @f:- member
+ * @f:- call back (function called back)
  *
  * Return: Void
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	char * = &n;
-	char name = &name;
-
-	f(char n);
-
-	while (n < sizeof(name))
+	if (name != NULL && f != NULL)
 	{
-		_putchar(n);
-		n++;
+		f(name);
 	}
 }
