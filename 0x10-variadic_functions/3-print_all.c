@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	va_start(ap, fmt);
 	while (*p = fmt)
 	{
-		if (*p != p[x])
+		if (*p == NULL)
 		{
 			printf("nil");
 		}
