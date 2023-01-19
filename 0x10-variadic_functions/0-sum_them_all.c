@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <strarg.h>
 #include <stdlib.h>
 #include <stdio.h>
 
