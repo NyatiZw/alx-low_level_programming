@@ -10,17 +10,16 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list args;
-	va_start(args, format);
-	vtest(format, args);
-	va_end(args);
-
 	sum = 0;
-
+	va_list args1;
+	va_start(args1, n);
+	va_list args2;
+	va_copy(args2, args1);
 	if (n == 0)
 	{
 		return (0);
 	}
-	sum = n + args;
-	return (sum);
+	sum += args1 + args2;
+	va_end(args1);
+	return (sum + n);
 }
