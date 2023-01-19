@@ -15,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	const char* str = separator;
 
-	va_start(argptr, separator);
+	va_start(argptr, n);
 
 	while (str != 0)
 	{
@@ -23,5 +23,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		str = va_arg(argptr, const char* );
 	}
 	va_end(argptr);
-	return (1);
 }
