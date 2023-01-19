@@ -13,12 +13,17 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	char *p, *sval;
 	int ival;
-	float fval;
+	float dval;
 
 	va_start(ap, format);
-	while (*p = format)
+	while (p == format)
 	{
-		if (*p != '%')
+
+		if (*sval = NULL)
+		{
+			printf("nil");
+		}
+		if (*p == '')
 		{
 			_putchar(*p);
 			continue;
@@ -28,24 +33,23 @@ void print_all(const char * const format, ...)
 			case 'i':
 				ival = va_arg(ap, int);
 				printf("%d", ival);
-				break;
+			break;
 			case 'f':
-				fval = va_arg(ap, float);
-				printf("%f", fval);
-				break;
+				dval = va_arg(ap, double);
+				printf("%f", dval);
+			break;
 			case 's':
 				while (sval == va_arg(ap, char *))
 				{
-				/*	if (*sval = NULL) {printf("nil");}*/
 					_putchar(*sval);
 					sval++;
 				}
-				break;
+			break;
 			default:
 				_putchar(*p);
-				break;
-			}
-		p++;
-		va_end(ap);
+			break;
+		}
 	}
+	p++;
+	va_end(ap);
 }
