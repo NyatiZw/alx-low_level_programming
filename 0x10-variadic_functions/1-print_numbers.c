@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		for (i = 0; i < n; i++)
 		{
 			value = va_arg(ap, int);
-			printf("%d: %d\n", i, value);
+			printf("%d,\n", value);
 		}
 	}
 	i++;
