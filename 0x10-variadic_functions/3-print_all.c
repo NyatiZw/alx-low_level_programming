@@ -12,18 +12,18 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	char *p, *sval;
-	int ival;
+	int ival, x;
 	float dval;
 
 	va_start(ap, format);
 	while (p == format)
 	{
 
-		if (*sval = NULL)
+		if (*sval[x] == NULL)
 		{
 			printf("nil");
 		}
-		if (*p == '')
+		if (*p == "")
 		{
 			_putchar(*p);
 			continue;
