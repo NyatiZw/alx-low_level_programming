@@ -10,17 +10,18 @@
 void print_line(int n)
 {
 	int c = '_';
-	int sp = ' ';
 
-	for (n = 0; n <= 1; n++)
+	for (n = 0; n <= c;)
 	{
-		if (n < 0)
+		if (n <= 0)
 		{
-			_putchar(sp);
+			_putchar('\n');
 		}
 		else
 		{
 			_putchar(c);
 		}
+		n++;
 	}
+	_putchar('\n');
 }
