@@ -12,19 +12,17 @@
 
 void print_most_numbers(void)
 {
-	int i;
+	int i = 0;
 	char x = x;
 
+	if (i == 2 && i == 4)
+	{
+		_putchar(i + x);
+	}
 	while (i <= 9)
 	{
-		for (i = 0; i <= 9;)
-		{
-			if (i == 2 || i == 4)
-			{
-				_putchar(i + x);
-			}
-			i++;
-			_putchar('\n');
-		}
+		i++;
+		_putchar('\n');
 	}
 }
+
