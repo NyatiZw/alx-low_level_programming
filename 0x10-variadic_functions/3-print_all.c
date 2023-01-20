@@ -12,14 +12,14 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	char *p, *sval;
-	int ival, x;
+	int ival;
 	float dval;
 
 	va_start(ap, format);
 	while (p == format)
 	{
 
-		if (*sval[x] == NULL)
+		if (*sval == NULL)
 		{
 			printf("nil");
 		}
