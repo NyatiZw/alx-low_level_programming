@@ -16,14 +16,14 @@ void print_all(const char * const format, ...)
 	float dval;
 
 	va_start(ap, format);
-	while (p == format)
+	while (*p)
 	{
 
-		if (*sval == NULL)
+		if (*sval)
 		{
 			printf("nil");
 		}
-		if (*p == "")
+		if (*p)
 		{
 			_putchar(*p);
 			continue;
