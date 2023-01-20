@@ -11,7 +11,7 @@ void print_line(int n)
 {
 	int c = '_';
 
-	for (n = 0; n <= c;)
+	for (n = 0; n >= c;)
 	{
 		if (n <= 0)
 		{
