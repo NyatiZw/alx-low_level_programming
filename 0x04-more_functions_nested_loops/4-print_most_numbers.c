@@ -15,14 +15,17 @@ void print_most_numbers(void)
 	int i = 0;
 	char x = x;
 
-	if (i == 2 && i == 4)
+	for (i = 0; i <= 9;)
 	{
-		_putchar(i + x);
-	}
-	while (i <= 9)
-	{
-		i++;
-		_putchar('\n');
+		if (i == 2 && i == 4)
+		{
+			_putchar(i++);
+		}
+		while (i <= 9)
+		{
+			i++;
+			_putchar('\n');
+		}
 	}
 }
 
