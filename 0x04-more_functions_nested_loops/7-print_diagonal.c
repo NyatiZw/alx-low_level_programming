@@ -11,8 +11,8 @@
 
 void print_diagonal(int n)
 {
-	int i, k, j = 1;
-	char sq = '#';
+	int i, j;
+	int k = 0;
 
 	for (i = 1; n <= (2 * n) - 1; i++)
 	{
@@ -20,7 +20,7 @@ void print_diagonal(int n)
 		{
 			if (i == j || i + j == (2 * n))
 			{
-				_putchar(sq);
+				_putchar("'\ '");
 			}
 			else
 			{
