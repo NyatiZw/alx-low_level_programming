@@ -14,29 +14,19 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *p, i;
-	
-	p = (unsigned int *)malloc(nmemb * sizeof(unsigned int));
+	void *p;
+
+	p = (void *)malloc(nmemb * sizeof(unsigned int));
 	if (p != 0)
 	{
 		if (nmemb == 0 && size == 0)
 		{
 			return (NULL);
 		}
-		
-		for (i = 0; i < nmemb; ++i)
-		{
-			p[i] = i + 1;
-		}
-		
-		for (i = 0; i < size; ++i)
-		{
-			_putchar(i);
-		}
-	}
+	}	
 	else
 	{
-		exit(-1);
+		exit(1);
 		return (NULL);
 	}
 	free(p);
