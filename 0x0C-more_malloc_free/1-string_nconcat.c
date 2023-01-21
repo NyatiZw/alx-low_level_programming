@@ -47,6 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			ptr[j++] = s2[i];
 		}
 	}
-	free(ptr);
+	free(s1);
 	return (ptr);
 }
