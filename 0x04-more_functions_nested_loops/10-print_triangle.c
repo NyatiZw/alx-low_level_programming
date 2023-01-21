@@ -1,16 +1,15 @@
+#include "main.h"
+
 /**
- * print_triangle- Entry point
- *
- * Description:- 'Function that prints a triangle'
- * @size:- size of the triangle
- *
- * Return: Always (0)
+ * print_triangle:- 'Function to print a triangle'
+ * @size:- member
+ * Return: Nothing
  */
 
 void print_triangle(int size)
 {
 	int n, i = 0;
-	
+
 	if (size <= 0)
 	{
 		_putchar('\n');
