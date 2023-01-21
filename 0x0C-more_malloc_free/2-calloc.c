@@ -14,31 +14,31 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *p, *p1;
-	unsigned int i;
-
-	p = (unsigned int*)malloc(nmemb * sizeof(unsigned int));
-
-	p1 = (unsigned int*)calloc(nmemb, sizeof(unsigned int));
-
-	if (p == NULL || p1 == NULL)
+	unsigned int *p, i;
+	
+	p = (unsigned int *)malloc(nmemb * sizeof(unsigned int));
+	if (p != 0)
 	{
-		return (NULL);
-		exit(0);
+		if (nmemb == 0 && size == 0)
+		{
+			return (NULL);
+		}
+		
+		for (i = 0; i < nmemb; ++i)
+		{
+			p[i] = i + 1;
+		}
+		
+		for (i = 0; i < size; ++i)
+		{
+			_putchar(i);
+		}
 	}
 	else
 	{
-		for (i = 0; i < nmemb; ++i)
-		{
-                        p[i] = i + 1;
-                }
-
-                for (i = 0; i < size; ++i)
-                {
-                        _putchar(i);
-                }
-		_putchar(p);
+		exit(-1);
+		return (NULL);
 	}
 	free(p);
-	free(p1);
+	return (p);
 }
