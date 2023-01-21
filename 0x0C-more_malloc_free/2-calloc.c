@@ -22,17 +22,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	else
+	
+	for (i = 0; i < n; ++i)
 	{
-		for (i = 0; i < n; ++i)
-		{
-			p[i] = i + 1;
-		}
+		p[i] = i + 1;
+	}
 
-		for (i = 0; i < n; ++i)
-		{
-			_putchar(i);
-		}
+	for (i = 0; i < n; ++i)
+	{
+		_putchar(i);
 	}
 
 	free(p);
