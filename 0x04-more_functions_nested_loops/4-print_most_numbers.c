@@ -17,8 +17,13 @@ void print_most_numbers(void)
 	while (i <= 9)
 	{
 		_putchar(i);
+		_putchar('\n');
 		i++;
 	}
-	_putchar('\n');
+
+	if ( i == 2 || i == 4)
+	{
+		i++;
+	}
 }
 
