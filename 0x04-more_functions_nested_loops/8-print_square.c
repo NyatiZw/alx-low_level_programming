@@ -1,10 +1,9 @@
+#include "main.h"
+
 /**
- * print_square- Entry point
- *
- * Description:- 'Function that prints a square'
- * @size:- size of the square
- *
- * Return: Always (0)
+ * print_square:- 'Function to print a square'
+ * @size:- member
+ * Return: Nothing
  */
 
 void print_square(int size)
@@ -19,7 +18,7 @@ void print_square(int size)
 	{
 		for (; n <= size * n;)
 		{
-			_putchar(#);
+			_putchar('#');
 		}
 		n++;
 	}
