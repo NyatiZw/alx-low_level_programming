@@ -16,10 +16,10 @@ void print_all(const char * const format, ...)
 	float dval;
 
 	va_start(ap, format);
+	
 	while (*p)
 	{
-
-		if (*sval)
+		if (sval == NULL)
 		{
 			printf("nil");
 		}
@@ -33,21 +33,21 @@ void print_all(const char * const format, ...)
 			case 'i':
 				ival = va_arg(ap, int);
 				printf("%d", ival);
-			break;
+				break;
 			case 'f':
 				dval = va_arg(ap, double);
 				printf("%f", dval);
-			break;
+				break;
 			case 's':
 				while (sval == va_arg(ap, char *))
 				{
 					_putchar(*sval);
 					sval++;
 				}
-			break;
+				break;
 			default:
 				_putchar(*p);
-			break;
+				break;
 		}
 	}
 	p++;
