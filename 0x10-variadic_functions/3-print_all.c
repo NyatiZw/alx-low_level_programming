@@ -11,19 +11,19 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	char *p, *sval;
+	const char *p, *sval;
 	int ival;
 	float dval;
 
 	va_start(ap, format);
 	
-	while (*p)
+	while (p != NULL)
 	{
 		if (sval == NULL)
 		{
 			printf("nil");
 		}
-		if (*p)
+		if (p == NULL)
 		{
 			_putchar(*p);
 			continue;
