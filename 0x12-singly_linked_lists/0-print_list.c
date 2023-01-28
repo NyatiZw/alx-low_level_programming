@@ -1,27 +1,30 @@
 #include "lists.h"
-#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * print_list:- 'Function to print elements of a list'
- * @h:- member
- * Return: size of array
+ * print_list:- 'Function that prints all the elements of a list'
+ * @h:- points to first element of list node
+ * Return: Sizeof list
  */
 
 size_t print_list(const list_t *h)
 {
-	int i;
+        int i = 0;
 
-	if (h->str == NULL)
-	{
-		printf("[0] (nil)\n");
-	}
-	while (h)
-	{
-		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		i++;
-	}
+        while (h)
+        {
+                if (h->str == NULL)
+                {
+                        printf("[0] (nil)\n");
+                }
+
+                if (h->str != NULL)
+                {
+                        printf("[%d] %s\n", h->len, h->str);
+                }
+                h = h->next;
+        }
+        i++;
 	return (i);
 }
