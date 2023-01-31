@@ -10,12 +10,12 @@
 
 size_t print_listint(const listint_t *h)
 {
-	unsigned int i = 0;
-
-	while (h->n[i])
+	listint_t *ptr = NULL;
+	ptr = h;
+	while (ptr != NULL)
 	{
-		printf("%d\n", i);
-		i++;
+		printf("%d\n", ptr->n);
+		ptr = ptr->next;
 	}
-	return (h);
+	return (ptr);
 }
