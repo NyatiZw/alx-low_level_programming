@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
- * *get_nodeint_at_index:- 'Function that returns nth node of list'
+ * sum_listint:- 'Function that returns sum of list data'
  * @head:- pointer to pointer head of node
- * @index:- integer value
  * Return: Always 0
  */
 
@@ -13,6 +12,7 @@ int sum_listint(listint_t *head)
 {
 	int result;
 	listint_t *temp = malloc(sizeof(listint_t));
+
 	head = temp;
 
 	head = malloc(sizeof(listint_t));
@@ -20,7 +20,6 @@ int sum_listint(listint_t *head)
 	{
 		return (0);
 	}
-
 	while (head)
 	{
 		result = head->n + head->n;
