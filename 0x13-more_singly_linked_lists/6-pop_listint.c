@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * pop_listint:- 'Function that deletes the head node
+ * pop_listint:- 'Function that deletes the head node'
  * @head:- pointer to pointer head of node
  * Return: node's data || 0
  */
