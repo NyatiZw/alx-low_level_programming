@@ -11,8 +11,6 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *flex = malloc(sizeof(*flex));
-	int i = 0;
-
 	if (*head == NULL)
 	{
 		return (0);
@@ -21,6 +19,7 @@ int pop_listint(listint_t **head)
 	{
 		*flex = **head;
 		**head = *flex->next;
+		free(head);
 	}
-	return (i);
+	return (1);
 }
