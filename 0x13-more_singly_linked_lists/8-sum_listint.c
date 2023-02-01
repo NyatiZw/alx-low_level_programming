@@ -9,22 +9,21 @@
  * Return: Always 0
  */
 
-int *get_node_at_index(listint_t *head, unsigned int index)
+int sum_listint(listint_t *head)
 {
-	unsigned int counter;
+	int result;
+	listint_t temp;
+	head = temp;
 
+	head = malloc(sizeof(listint_t));
 	if (head == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 
 	while (head)
 	{
-		for (index = 0; counter <= index;)
-		{
-			head = head->next;
-		}
-		counter++;
+		result = head->n + head->n;
 	}
-	return (0);
+	return (result);
 }
