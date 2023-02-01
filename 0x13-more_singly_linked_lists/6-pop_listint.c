@@ -10,7 +10,8 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *flex = malloc(sizeof(*flex));
+	listint_t *flex = malloc(sizeof(listint_t));
+
 	if (*head == NULL)
 	{
 		return (0);
