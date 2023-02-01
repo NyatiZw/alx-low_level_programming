@@ -12,7 +12,7 @@
 int sum_listint(listint_t *head)
 {
 	int result;
-	listint_t temp;
+	listint_t *temp = malloc(sizeof(listint_t));
 	head = temp;
 
 	head = malloc(sizeof(listint_t));
