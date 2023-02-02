@@ -6,11 +6,11 @@
  * Return: Nothing
  */
 
-void print_binary(unsigned long int n);
+void print_binary(unsigned long int n)
 {
 	unsigned i;
 
-	for (i = 1 << 32; i > 0; i >>= 1)
+	for (i = 1 << 31; i > 0; i >>= 1)
 	{
 		_putchar(n & i);
 	}
