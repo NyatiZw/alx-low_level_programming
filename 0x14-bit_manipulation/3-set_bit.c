@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * set_bit:- 'Function that sets the value of a bit to 1 at a given index'
- * @n:- member
- * @index:- member
- * Return: 0 || -1
+ * set_bit:- 'Function to set the value of a bit at given index'
+ * @n:- points to number
+ * @index:- index value
+ * Return: Always 0
  */
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int bit_value;
-
-	if (index >= sizeof(unsigned long int))
+	if (index >= (sizeof(unsigned long int)))
 	{
 		return (-1);
 	}
-	bit_value = (n >> index) & 1;
-
-	return (bit_value);
+	*n ^= (1 << index);
+	return (1);
 }
+
