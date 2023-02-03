@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip_bit:- 'Function to return number of flipped bits'
+ * flip_bits:-'Function to return number of flipped bits'
  * @n:- points to number
  * @m:- member
  * Return: Always 0
