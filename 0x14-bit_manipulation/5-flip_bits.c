@@ -9,7 +9,7 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int flipper, bit = 0;
+	unsigned long int flipper = n ^ m, bit = 0;
 
 	if (flipper > 0)
 	{
