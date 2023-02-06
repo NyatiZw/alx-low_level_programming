@@ -10,17 +10,21 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int r;
+	int i;
 
-	if (!filename && filename == NULL)
+	if (filename == NULL)
 	{
 		return (0);
 	}
-	for (r = 0; letters[r];)
+	else
 	{
-		open("filename", "letters[r]");
-		r++;
+		while (filename != NULL)
+		{
+			for (i = 0; i <= letters;)
+			{
+				i++;
+			}
+		}
 	}
-
-	return (0);
+	return (read_textfile);
 }
