@@ -10,21 +10,23 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
-
-	if (filename == NULL)
+	int i = 0;
+	char *buffer;
+	
+	if (!filename && filename == NULL)
 	{
 		return (0);
 	}
-	else
+	
+	buffer = malloc(sizeof(letters));
+	if (buffer == NULL)
 	{
-		while (filename != NULL)
-		{
-			for (i = 0; i <= letters;)
-			{
-				i++;
-			}
-		}
+		return (0);
 	}
-	return (read_textfile);
+	open("filename", "buffer", "O_RONLY");
+	read(STDIN_FILENO, buffer, i);
+	close(buffer[i]);
+	free(buffer);
+	
+	return (1);
 }
