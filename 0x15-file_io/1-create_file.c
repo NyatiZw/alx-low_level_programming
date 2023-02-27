@@ -9,34 +9,30 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fp;
-	char *buffer;
-	int i;
-	int r;
-	int w;
+	int length;
+	int openf, writef = 0;
 
-	buffer = malloc(sizeof(char));
 	if (filename == NULL)
 	{
 		return (-1);
 	}
 
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		return (' ');
+		for (length; text_content[length];)
+		{
+			length++;
 	}
 
-	fp = open(filename, O_RDONLY || O_WRONLY || O_TRUNC, 0600);
+	openf= open(filename, O_CREAT || O_RDWR || O_TRUNC, 0600);
+	writef = write(openf, text_content, length);
 
-	for (i = 0; i <= (text_content[i] != '\0');)
+	if (openf == -1 || writef == -1)
 	{
-		i++;
+		return (-1);
 	}
-	r = read(fp, buffer, text_content[i]);
-	w = write(STDOUT_FILENO, buffer, r);
 
-	free(buffer);
-	close(fp);
+	close(openf);
 
-	return (w);
+	return (1);
 }
