@@ -3,18 +3,29 @@
 /**
  * size_t print_dlistint:- 'Function to print all elements of a list'
  * @h:- pointer to head of node list
- * Return : Always 0
+ * Return : Number of nodes
  */
 
 size_t print_dlistint(const dlistint_t *h)
 {
+	int counter = 0;
 
-	h = malloc(sizeof(dlistint));
 	if (h == NULL)
 	{
-		return (0);
-		num = h->n;
+		return (counter);
 	}
 
-	return (num);
+	while (h->prev != NULL)
+	{
+		h = h->prev;
+	}
+
+	while (h != NULL)
+	{
+		printf("%d\n". h->n);
+		h = h->next;
+		counter++;
+	}
+
+	return (counter);
 }
