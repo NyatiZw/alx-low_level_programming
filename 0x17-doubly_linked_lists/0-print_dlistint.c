@@ -8,13 +8,13 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	int num;
 
 	h = malloc(sizeof(dlistint));
 	if (h == NULL)
 	{
 		return (0);
+		num = h->n;
 	}
-	num = h->n;
+
 	return (num);
 }
