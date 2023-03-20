@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sun_dlistint:- 'Function that returns sum of all elements'
+ * sum_dlistint:- 'Function that returns sum of all elements'
  * @head:- pointer to head
  * Return: sum of integers || 0
  */
@@ -22,5 +22,6 @@ int sum_dlistint(dlistint_t *head)
 		sum += tmp->n;
 		tmp = tmp->next;
 	}
+
 	return (sum);
 }
