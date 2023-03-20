@@ -2,7 +2,7 @@
 
 /**
  * free_delistint:- 'Function that frees a node'
- * @head:- pointer to head 
+ * @head:- pointer to head
  * Return: nothing
  */
 void free_dlistint(dlistint_t *head)
