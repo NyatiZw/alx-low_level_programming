@@ -12,13 +12,13 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	unsigned long int i;
 
-	key = malloc(sizeof(const unsigned char));
+	key = malloc(sizeof(const unsigned char) * size);
 	if (key == NULL)
 	{
 		return (-1);
 	}
 
-	while (hash_djb2(key))
+	while (key)
 	{
 		for (i = 0; i <= size[key];)
 		{
