@@ -12,7 +12,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	unsigned long int i;
 
-	key = malloc(sizeof(unsigned long int));
+	key = malloc(sizeof(const unsigned char));
 	if (key == NULL)
 	{
 		return (-1);
