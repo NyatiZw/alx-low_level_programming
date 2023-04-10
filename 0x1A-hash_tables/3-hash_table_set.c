@@ -16,17 +16,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *empty_new_node;
 
 	val_cpy = strdup(value);
-	if (ht == NULL || Key == NULL || value == NULL || val_cpy == NULL)
+	if (ht == NULL || key == NULL || value == NULL || val_cpy == NULL)
 	{
 		return (0);
 	}
 
 	index = key_index((const unsigned char)key, ht->size);
-	for (i = index; ht->array[i]; i++)
+	for (j = index; ht->array[j]; j++)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
+		if (strcmp(ht->array[j]->key, key) == 0)
 		{
-			ht->array[i]->value = val_cpy;
+			ht->array[j]->value = val_cpy;
 			return (1);
 		}
 	}
