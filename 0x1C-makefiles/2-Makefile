@@ -1,7 +1,7 @@
 #Makefile for school.c
 CC = gcc
 SRC = *.c
-OBJ = *.o
+OBJ = *{$(SRC)-o}
 NAME = school
 
 all:
