@@ -1,0 +1,14 @@
+#Makefile for school.c
+CC = gcc
+SRC = school.c
+
+all: school
+
+school: school.o
+	$(CC) -Wall -g -o school school.o
+
+school.o: $(SRC)
+	$(CC) -Wall -g -c $(SRC)
+
+clean:
+	rm -f school.o school
