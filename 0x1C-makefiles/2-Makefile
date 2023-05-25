@@ -1,8 +1,8 @@
 #Makefile for school.c
 CC = gcc
-SRC = school.c
-OBJ = $(SRC:.c=.o)
+SRC = *.c
+OBJ = *.o
 NAME = school
 
-all: $(OBJ)
+all:
 	$(CC) $(OBJ) -o $(NAME)
