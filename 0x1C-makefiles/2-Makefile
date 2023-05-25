@@ -1,16 +1,8 @@
 #Makefile for school.c
 CC = gcc
 SRC = school.c
-OBJ = school.o
+OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: school
-
-school: school.o
-	$(CC) -Wall -g -o school school.o
-
-school.o: $(SRC)
-	$(CC) -Wall -g -c $(SRC)
-
-clean:
-	rm -f school.o school
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
