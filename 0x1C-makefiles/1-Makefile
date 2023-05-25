@@ -1,6 +1,6 @@
 #Makefile for school.c
 CC = gcc
-SRC = school.c
+SRC = school.c main.c
 
-all: $(SRC)
-	$(CC) -Wall -g -o school school.o
+all:
+	$(CC) $(SRC) -o school
