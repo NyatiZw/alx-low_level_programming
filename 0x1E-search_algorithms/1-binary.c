@@ -1,5 +1,29 @@
 #include "search_algos.h"
 
+
+/**
+ * print_array:- 'Helper function to print halved array'
+ * @array: array to halve
+ * @start: start of the array
+ * @end: end of array
+ * Return: nothing
+ */
+
+void print_array(int *array, int start, int end)
+{
+	int i;
+
+	for (i = start; i <= end; i++)
+	{
+		printf("%d", array[i]);
+		if (i != end)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+}
+
 /**
  * binary_search - Entry Point
  *
@@ -45,27 +69,4 @@ int binary_search(int *array, size_t size, int value)
 	}
 
 	return (-1);
-}
-
-/**
- * print_array:- 'Helper function to print halved array'
- * @array: array to halve
- * @start: start of the array
- * @end: end of array
- * Return: nothing
- */
-
-void print_array(int *array, int start, int end)
-{
-	int i;
-
-	for (i = start; i <= end; i++)
-	{
-		printf("%d", array[i]);
-		if (i != end)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
 }
