@@ -4,11 +4,11 @@
  * linear_search - Entry Point
  *
  * Description:- 'Function that searches for a value in an array'
- * @array: an array
- * @size: size of array
- * @value: value of element
+ * @array: pointer to first element of array
+ * @size: number of elements in array
+ * @value: value to search for
  *
- * Return: Array element | -1
+ * Return: -1
  */
 
 int linear_search(int *array, size_t size, int value)
@@ -27,7 +27,7 @@ int linear_search(int *array, size_t size, int value)
 		{
 			return (i);
 		}
-	}
 
-	return (-1);
+		return (-1);
+	}
 }
