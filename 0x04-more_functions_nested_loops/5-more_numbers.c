@@ -21,8 +21,8 @@ void more_numbers(void)
 			for (; l <= 10;)
 			{
 				_putchar(l);
+				l++;
 			}
-			l++;
 		}
 		n++;
 	}

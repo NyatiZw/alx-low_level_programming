@@ -10,13 +10,15 @@
 
 void print_all(const char * const format, ...)
 {
+	char x,
+
 	va_list ap;
 	const char *p, *sval;
 	int ival;
 	float dval;
 
 	va_start(ap, format);
-	
+	va_arg(ap, int);	
 	while (p != NULL)
 	{
 		if (sval == NULL)
@@ -41,12 +43,12 @@ void print_all(const char * const format, ...)
 			case 's':
 				while (sval == va_arg(ap, char *))
 				{
-					_putchar(*sval);
+					printf("%c", *sval);
 					sval++;
 				}
 				break;
 			default:
-				_putchar(*p);
+				printf("%c", *p;)
 				break;
 		}
 	}

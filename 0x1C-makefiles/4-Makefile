@@ -1,5 +1,4 @@
 # Makefile for school.c
-
 CC = gcc
 SRC = school.c main.c
 OBJ = $(SRC:.c=.o)
@@ -16,8 +15,6 @@ clean:
 oclean: 
 	$(RM) $(OBJ)
 
-fclean: 
-	clean oclean
+fclean: clean oclean
 
-re: 
-	fclean all
+re: fclean all
